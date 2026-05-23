@@ -5,7 +5,7 @@
 This is the repository for [CS 1337/HW2](/CS1337/HW2).
 
 ## Execution Instructions
-Open terminal in `CS1-Portfolio` and run:
+Open terminal in `CS1-portfolio` and run:
 <!-- CODE START -->
 ```
 cd CS1337/HW2

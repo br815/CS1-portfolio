@@ -5,7 +5,7 @@
 This is the repository for [CS 1337/HW4](/CS1337/HW4).
 
 ## Execution Instructions
-Open terminal in `CS1-Portfolio` and run:
+Open terminal in `CS1-portfolio` and run:
 <!-- CODE START -->
 ```
 cd CS1337/HW4

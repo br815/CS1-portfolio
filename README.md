@@ -2,7 +2,7 @@
 
 # CS1 Portfolio | Bushra Rahman
 ## CS 1337 (Computer Science I) | UTD Fall 2019
-GitHub Pages link: https://br815.github.io/CS1-Portfolio/
+GitHub Pages link: https://br815.github.io/CS1-portfolio/
 
 This repository contains university programming assignments from my [Computer Science I course](/CS1337).
 
@@ -62,7 +62,7 @@ To install MinGW on Windows 11 or less, follow [these instructions](/CS1337/Ecli
 (Using [HW1](/CS1337/HW1/) as an example. HW1 contains a [src](/CS1337/HW1/src/) folder,\
 which contains 2 source files [main.cpp](/CS1337/HW1/src/main.cpp) and [amortize.cpp](/CS1337/HW1/src/amortize.cpp), and 1 header file [amortize.h](/CS1337/HW1/src/amortize.h).)
 
-Open terminal in `CS1-Portfolio` and run:
+Open terminal in `CS1-portfolio` and run:
 <!-- CODE START -->
 ```
 cd CS1337/HW1                   # cd to project root
