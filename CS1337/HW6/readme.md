@@ -5,7 +5,7 @@
 This is the repository for [CS 1337/HW6](/CS1337/HW6).
 
 ## Execution Instructions
-Open terminal in `CS1_Portfolio` and run:
+Open terminal in `CS1-Portfolio` and run:
 <!-- CODE START -->
 ```
 cd CS1337/HW6
@@ -24,7 +24,7 @@ g++ src/*.cpp -o build/HW6
 Alternative compilation instructions can be followed, if desired, to produce the executable elsewhere (eg. in a `build` folder).
 
 ## Homework Instructions
-* [HW 6: Design Patterns Continued](/CS1337/HW6/HW6_DesignPatternsCont.pdf)
+* [HW 6: Design Patterns Continued](/CS1337/HW6/HW6_Design_Patterns_Cont.pdf)
 
 ## src Folder
 ### Source Files

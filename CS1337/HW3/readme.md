@@ -5,7 +5,7 @@
 This is the repository for [CS 1337/HW3](/CS1337/HW3).
 
 ## Execution Instructions
-Open terminal in `CS1_Portfolio` and run:
+Open terminal in `CS1-Portfolio` and run:
 <!-- CODE START -->
 ```
 cd CS1337/HW3
@@ -16,7 +16,7 @@ build/HW3
 <!-- CODE END -->
 
 ## Homework Instructions
-* [HW 3: Memory Management in C](/CS1337/HW3/HW3_MemMgmtC.pdf)
+* [HW 3: Memory Management in C](/CS1337/HW3/HW3_Memory_Mgmt_C.pdf)
 
 ## src Folder
 ### Source Files

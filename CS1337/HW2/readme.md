@@ -5,7 +5,7 @@
 This is the repository for [CS 1337/HW2](/CS1337/HW2).
 
 ## Execution Instructions
-Open terminal in `CS1_Portfolio` and run:
+Open terminal in `CS1-Portfolio` and run:
 <!-- CODE START -->
 ```
 cd CS1337/HW2
@@ -16,7 +16,7 @@ build/HW2
 <!-- CODE END -->
 
 ## Homework Instructions
-* [HW 2: Searching and Sorting on Arrays](/CS1337/HW2/HW2_SearchingSortingArrays.pdf)
+* [HW 2: Searching and Sorting on Arrays](/CS1337/HW2/HW2_Searching_Sorting_Arrays.pdf)
 
 ## src Folder
 ### Source Files

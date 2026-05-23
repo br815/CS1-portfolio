@@ -5,7 +5,7 @@
 This is the repository for [CS 1337/HW5](/CS1337/HW5).
 
 ## Execution Instructions
-Open terminal in `CS1_Portfolio` and run:
+Open terminal in `CS1-Portfolio` and run:
 <!-- CODE START -->
 ```
 cd CS1337/HW5
@@ -22,7 +22,7 @@ g++ src/*.cpp -o build/HW5
 <!-- CODE END -->
 
 ## Homework Instructions
-* [HW 5: Design Patterns](/CS1337/HW5/HW5_DesignPatterns.pdf)
+* [HW 5: Design Patterns](/CS1337/HW5/HW5_Design_Patterns.pdf)
 
 ## src Folder
 ### Source Files

@@ -2,7 +2,7 @@
 
 # CS1 Portfolio | Bushra Rahman
 ## CS 1337 (Computer Science I) | UTD Fall 2019
-GitHub Pages link: https://br815.github.io/CS1_Portfolio/
+GitHub Pages link: https://br815.github.io/CS1-Portfolio/
 
 This repository contains university programming assignments from my [Computer Science I course](/CS1337).
 
@@ -56,14 +56,13 @@ To install MinGW on Windows 11 or less, follow [these instructions](/CS1337/Ecli
     ```
     <!-- CODE END -->
     Run `gcc --version` to see similar output for the C compiler.
-
-After installing MinGW and adding it to `Path`, make sure to restart your IDE to avoid compilation errors.
+4. After installing MinGW and adding it to `Path`, make sure to restart your IDE to avoid compilation errors.
 
 ## C and C++ Compilation & Execution Overview
 (Using [HW1](/CS1337/HW1/) as an example. HW1 contains a [src](/CS1337/HW1/src/) folder,\
 which contains 2 source files [main.cpp](/CS1337/HW1/src/main.cpp) and [amortize.cpp](/CS1337/HW1/src/amortize.cpp), and 1 header file [amortize.h](/CS1337/HW1/src/amortize.h).)
 
-Open terminal in `CS1_Portfolio` and run:
+Open terminal in `CS1-Portfolio` and run:
 <!-- CODE START -->
 ```
 cd CS1337/HW1                   # cd to project root
@@ -117,22 +116,22 @@ Note that compilation and execution can be done either...
 
 ## Homework Instructions & Readme Files
 * HW 1
-    * [HW 1: Introduction to Multi-File Projects](/CS1337/HW1/HW1_IntroToMultiFileProjects.pdf)
+    * [HW 1: Introduction to Multi-File Projects](/CS1337/HW1/HW1_Intro_To_Multi_File_Projects.pdf)
     * [HW 1 readme](/CS1337/HW1/readme.md)
 * HW 2
-    * [HW 2: Searching and Sorting on Arrays](/CS1337/HW2/HW2_SearchingSortingArrays.pdf)
+    * [HW 2: Searching and Sorting on Arrays](/CS1337/HW2/HW2_Searching_Sorting_Arrays.pdf)
     * [HW 2 readme](/CS1337/HW2/readme.md)
 * HW3
-    * [HW 3: Memory Management in C](/CS1337/HW3/HW3_MemMgmtC.pdf)
+    * [HW 3: Memory Management in C](/CS1337/HW3/HW3_Memory_Mgmt_C.pdf)
     * [HW 3 readme](/CS1337/HW3/readme.md)
 * HW4
     * [HW 4: Classes, Inheritance, and Polymorphism](/CS1337/HW4/HW4_Classes.pdf)
     * [HW 4 readme](/CS1337/HW4/readme.md)
 * HW5
-    * [HW 5: Design Patterns](/CS1337/HW5/HW5_DesignPatterns.pdf)
+    * [HW 5: Design Patterns](/CS1337/HW5/HW5_Design_Patterns.pdf)
     * [HW 5 readme](/CS1337/HW5/readme.md)
 * HW6
-    * [HW 6: Design Patterns Continued](/CS1337/HW6/HW6_DesignPatternsCont.pdf)
+    * [HW 6: Design Patterns Continued](/CS1337/HW6/HW6_Design_Patterns_Cont.pdf)
     * [HW 6 readme](/CS1337/HW6/readme.md)
 
 ## Notes

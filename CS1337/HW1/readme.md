@@ -5,7 +5,7 @@
 This is the repository for [CS 1337/HW1](/CS1337/HW1).
 
 ## Execution Instructions
-Open terminal in `CS1_Portfolio` and run:
+Open terminal in `CS1-Portfolio` and run:
 <!-- CODE START -->
 ```
 cd CS1337/HW1
@@ -16,7 +16,7 @@ build/HW1
 <!-- CODE END -->
 
 ## Homework Instructions
-* [HW 1: Introduction to Multi-File Projects](/CS1337/HW1/HW1_IntroToMultiFileProjects.pdf)
+* [HW 1: Introduction to Multi-File Projects](/CS1337/HW1/HW1_Intro_To_Multi_File_Projects.pdf)
 
 ## src Folder
 ### Source Files
