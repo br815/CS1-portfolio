@@ -1,7 +1,7 @@
 <!-- To preview this markdown file in VSCode: Ctrl+Shift+V -->
 
-# CS1 Portfolio | Bushra Rahman
-## CS 1337 (Computer Science I) | UTD Fall 2019
+# CS1 Portfolio | CS 1337 (Computer Science I) | UTD Fall 2019
+## Author: Bushra Rahman
 GitHub Pages link: https://br815.github.io/CS1-portfolio/
 
 This repository contains university programming assignments from my [Computer Science I course](/CS1337).
