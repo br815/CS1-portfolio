@@ -4,7 +4,7 @@
 	LogSingleton.cpp:		This source file contains the definitions for 4 of the 5 methods defined in the LogSingleton class. */
 
 #include "LogSingleton.h"	// header file for this class
-#include "CS1337Logger.h"	// header file for the CS1337Logger abstract class
+#include "AbstractLogger.h"	// header file for the AbstractLogger abstract class
 using namespace std;
 
 // initialize ptrLogSingleton to NULL
@@ -15,7 +15,7 @@ int LogSingleton::instanceCount = 0;
 
 
 /*	Function Type:		constructor (allows for a singleton design pattern)
-	Descr:				This constructor calls the Create() function from the CS1337Logger class.
+	Descr:				This constructor calls the Create() function from the AbstractLogger class.
 						This constructor, in turn, is called in getTheSingleton(), which creates a new LogSingleton object.
 						Therefore only one ScreenLogger or FileLogger object gets created whenever a LogSingleton object is instantiated,
 						and any subsequent call to getTheSingleton() will only create a new object if none currently exist.
@@ -29,7 +29,7 @@ LogSingleton::LogSingleton()
 	// is hard-coded to call Create() for a ScreenLogger object,
 	// but the argument can be changed between LT_ScreenLogger and LT_FileLogger.
 	// a single change to this line changes the type of logging object that's created.
-	ptrLogger = CS1337Logger::Create(LT_ScreenLogger);
+	ptrLogger = AbstractLogger::Create(LT_ScreenLogger);
 }
 
 

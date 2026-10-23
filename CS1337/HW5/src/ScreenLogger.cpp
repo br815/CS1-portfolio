@@ -4,7 +4,7 @@
 	ScreenLogger.cpp:		This source file contains the definitions for the 4 methods defined in the ScreenLogger subclass. */
 
 // include the header files for this subclass and its superclass
-#include "CS1337Logger.h"
+#include "AbstractLogger.h"
 #include "ScreenLogger.h"
 #include <iostream>
 
@@ -14,7 +14,7 @@
 	Descr:				This constructor creates a ScreenLogger object.
 	Param:    			None.
 	Return:				None, initializes a ScreenLogger object. */
-ScreenLogger::ScreenLogger() : CS1337Logger()
+ScreenLogger::ScreenLogger() : AbstractLogger()
 {
 	//
 }

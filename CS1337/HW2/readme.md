@@ -10,8 +10,14 @@ Open terminal in `CS1-portfolio` and run:
 ```
 cd CS1337/HW2
 mkdir build
-g++ src/main.cpp src/doTasks.cpp -o build/HW2
+g++ src/*.cpp -o build/HW2
 build/HW2
+```
+<!-- CODE END -->
+Alternatively, compilation can be done without using the `*.cpp` wildcard:
+<!-- CODE START -->
+```
+g++ src/main.cpp src/processArray.cpp -o build/HW2
 ```
 <!-- CODE END -->
 
@@ -21,10 +27,10 @@ build/HW2
 ## src Folder
 ### Source Files
 * [main.cpp](/CS1337/HW2/src/main.cpp): program driver containing `main()`
-* [doTasks.cpp](/CS1337/HW2/src/doTasks.cpp): implementation of 6 functions
+* [processArray.cpp](/CS1337/HW2/src/processArray.cpp): implementation of 6 functions
 
 ### Header File
-* [doTasks.h](/CS1337/HW2/src/doTasks.h): contains 6 function prototypes
+* [processArray.h](/CS1337/HW2/src/processArray.h): contains 6 function prototypes
 
 ## Input File
 * [names.txt](/CS1337/HW2/names.txt): input file

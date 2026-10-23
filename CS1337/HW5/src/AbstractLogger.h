@@ -1,12 +1,12 @@
 /*	Author:					Bushra Rahman
 	Course:					CS 1337 (Fall 2019)
 	Date:					11/14/2019
-	CS1337Logger.h:			This header file contains the definition of the CS1337Logger class.
+	AbstractLogger.h:		This header file contains the definition of the AbstractLogger class.
 							This class is the abstract base class from which the FileLogger and ScreenLogger classes are derived. */
 
 // header for #include guard (preprocessor directives)
-#ifndef CS1337LOGGER_H_		// if CS1337LOGGER_H_ is not defined, define it (start of header guard)
-#define CS1337LOGGER_H_		// define CS1337LOGGER_H_ once to prevent multiple inclusions
+#ifndef ABSTRACTLOGGER_H_	// if ABSTRACTLOGGER_H_ is not defined, define it (start of header guard)
+#define ABSTRACTLOGGER_H_	// define ABSTRACTLOGGER_H_ once to prevent multiple inclusions
 #include <iostream>
 using namespace std;
 
@@ -22,7 +22,7 @@ enum LoggerType
 
 
 
-class CS1337Logger
+class AbstractLogger
 {
 private:
 	// flag to enable or disable logging
@@ -30,9 +30,9 @@ private:
 
 public:
 	// constructor
-	CS1337Logger();
+	AbstractLogger();
 	// destructor
-	virtual ~CS1337Logger();
+	virtual ~AbstractLogger();
 
 	// inline getter for loggingEnabled
 	bool getLoggingEnabled() const
@@ -53,7 +53,7 @@ public:
 	virtual void logMessage(const char*);
 
 	// static Create function --> allows for a factory method design pattern
-	static CS1337Logger* Create(LoggerType loggerType);
+	static AbstractLogger* Create(LoggerType loggerType);
 };
 
 #endif						// end of "if not defined" ifndef block

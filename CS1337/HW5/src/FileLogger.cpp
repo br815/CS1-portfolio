@@ -4,7 +4,7 @@
 	FileLogger.cpp:			This source file contains the definitions for the 4 methods defined in the FileLogger subclass. */
 
 // include the header files for this subclass and its superclass
-#include "CS1337Logger.h"
+#include "AbstractLogger.h"
 #include "FileLogger.h"
 #include <iostream>
 #include <fstream>
@@ -16,7 +16,7 @@ using namespace std;
 	Descr:				This constructor opens the output file.
 	Param:    			None.
 	Return:				None, initializes a FileLogger object. */
-FileLogger::FileLogger() : CS1337Logger()
+FileLogger::FileLogger() : AbstractLogger()
 {
 	fout.open(FILENAME);
 	if (!fout)

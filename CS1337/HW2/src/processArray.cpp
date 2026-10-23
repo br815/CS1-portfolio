@@ -1,23 +1,23 @@
-/*	Author:			Bushra Rahman
-	Course:			CS 1337 (Fall 2019)
-	Date:			9/24/2019
-	doTasks.cpp:	This source file contains the function definitions for this project.
-					There are 6 functions in all:
-					1)          The function getPrompt() is responsible for printing the main menu of the program 
-                                and receiving the user-inputted prompt.
-                    2)          The function printArrays() prints the contents of all the arrays.
-                    3 and 4)    The function doSearch() takes the user-inputted substring 
-                                received from the function searchString() as a parameter, and searches for that substring.
-                    5 and 6)    The function doSort() takes the user-inputted sorting type
-                                received from the function getSortingType() as a parameter,
-                                and sorts according to that sorting type.
-					In summary, 
-					The functions getPrompt(), searchString(), and getSortingType() print out prompts for user input 
-					and receive the instructions to either search, sort, or quit. 
-					The function doSearch() searches for the user-inputted substring, 
-					and the function doSort() sorts by either first name or last name. */
+/*	Author:				Bushra Rahman
+	Course:				CS 1337 (Fall 2019)
+	Date:				9/24/2019
+	processArray.cpp:	This source file contains the function definitions for this project.
+						There are 6 functions in all:
+						1)          The function getPrompt() is responsible for printing the main menu of the program 
+									and receiving the user-inputted prompt.
+						2)          The function printArrays() prints the contents of all the arrays.
+						3 and 4)    The function runSearch() takes the user-inputted substring 
+									received from the function searchString() as a parameter, and searches for that substring.
+						5 and 6)    The function runSort() takes the user-inputted sorting choice
+									received from the function getSortingChoice() as a parameter,
+									and runs a selection sort on the fields specified by that sorting choice.
+						In summary, 
+						The functions getPrompt(), searchString(), and getSortingChoice() print out prompts for user input 
+						and receive the instructions to either search, sort, or quit. 
+						The function runSearch() searches for the user-inputted substring, 
+						and the function runSort() sorts by either first name or last name. */
 
-#include "doTasks.h"	// header file containing the tasks' function prototypes
+#include "processArray.h"	// header file containing the tasks' function prototypes
 #include <iostream>
 #include <iomanip>
 #include <fstream>
@@ -27,12 +27,12 @@ using namespace std;
 
 
 
-/*	Function 1:		doSort()
-	Descr:			This function implements selection sort to sort the entries in the input file based on the user-inputted sortingType choice.
-	Param:    		int sortingType, int numItems, string lastNameArray[], string firstNameArray[], string birthdateArray[]
+/*	Function 1:		runSort()
+	Descr:			This function implements selection sort to sort the entries in the input file based on the user-inputted sorting choice.
+	Param:    		int sortingChoice, int numItems, string lastNameArray[], string firstNameArray[], string birthdateArray[]
 					Variables to control the sorting process, and arrays containing the values being sorted.
 	Return:			None. */
-void doSort (int sortingType, int numItems, string lastNameArray[], string firstNameArray[], string birthdateArray[])
+void runSort (int sortingChoice, int numItems, string lastNameArray[], string firstNameArray[], string birthdateArray[])
 {
 	string searchingIn;                // the string of the current element
 	string searchingFor;               // the strings of the subsequent elements
@@ -59,14 +59,14 @@ void doSort (int sortingType, int numItems, string lastNameArray[], string first
 		birthdateArraySorted[i] = birthdateArray[i];
 
 		// if the arrays are to be sorted by last name
-		if(sortingType == 1)
+		if(sortingChoice == 1)
 		{
 			name[i] = lastNameArray[i];
 			title = "** Records Sorted By Last Name **";
 		}
 
 		// if the arrays are to be sorted by first name
-		else if (sortingType == 2)
+		else if (sortingChoice == 2)
 		{
 			name[i] = firstNameArray[i];
 			title = "** Records Sorted By First Name **";
@@ -127,12 +127,12 @@ void doSort (int sortingType, int numItems, string lastNameArray[], string first
 
 
 
-/*	Function 2:		doSearch()
+/*	Function 2:		runSearch()
 	Descr:			This function implements linear search to search the entries in the input file based on the user-inputted searchingFor choice.
 	Param:    		string searchingFor, int numItems, string lastNameArray[], string firstNameArray[], string birthdateArray[]
 					Variables to control the searching process, and arrays containing the values being searched.
 	Return:			None. */
-void doSearch (string searchingFor, int numItems, string lastNameArray[], string firstNameArray[], string birthdateArray[])
+void runSearch (string searchingFor, int numItems, string lastNameArray[], string firstNameArray[], string birthdateArray[])
 {
 	string searchingIn = "";             // any string in any array
 	int compareResult = -1;              // result of the string comparison
@@ -215,20 +215,20 @@ void printArrays(string title, int numItems, string lastNameArray[], string firs
 
 
 
-/*	Function 4:		getSortingType()
-	Descr:			This function prints the sorting menu for the user when they choose the "Sort" option.
+/*	Function 4:		getSortingChoice()
+	Descr:			This function prints the menu of sorting choices for the user when they choose the "Sort" option.
 	Param:    		None.
 	Return:			int prompt
-					The user-inputted sortingType choice. */
-int getSortingType()
+					The user-inputted sorting choice. */
+int getSortingChoice()
 {
-	// print the menu for sorting options
-	cout << endl << endl << "Available Sorting Options:" << endl;
+	// print the menu for sorting choices
+	cout << endl << endl << "Available Sorting Choices:" << endl;
 	cout << "1 Sort By Last Name" << endl;
 	cout << "2 Sort By First Name" << endl;
 	cout << "0 Print Original Records" << endl;
 
-	cout << "Please enter a sorting type: " << endl;
+	cout << "Please enter your sorting choice: " << endl;
 	int prompt = -1;
 	cin >> prompt;
 

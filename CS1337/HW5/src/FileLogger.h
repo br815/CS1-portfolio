@@ -2,19 +2,19 @@
 	Course:					CS 1337 (Fall 2019)
 	Date:					11/14/2019
 	FileLogger.h:			This header file contains the definition of the FileLogger subclass. 
-							This class is derived from the CS1337Logger class. */
+							This class is derived from the AbstractLogger class. */
 
 // header for #include guard (preprocessor directives)
 #ifndef FILELOGGER_H_		// if FILELOGGER_H_ is not defined, define it (start of header guard)
 #define FILELOGGER_H_		// define FILELOGGER_H_ once to prevent multiple inclusions
-#include "CS1337Logger.h"	// include the header file for the base class
+#include "AbstractLogger.h"	// include the header file for the base class
 #include <string>
 #include <fstream>
 using namespace std;
 
 
 
-class FileLogger : public CS1337Logger
+class FileLogger : public AbstractLogger
 {
 private:
 	// output file stream object

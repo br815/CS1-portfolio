@@ -10,14 +10,14 @@ Open terminal in `CS1-portfolio` and run:
 ```
 cd CS1337/HW5
 mkdir build
-g++ src/LogSingleton-Test.cpp src/CS1337Logger.cpp src/FileLogger.cpp src/ScreenLogger.cpp src/LogSingleton.cpp -o build/HW5
+g++ src/*.cpp -o build/HW5
 build/HW5
 ```
 <!-- CODE END -->
-For a project like this with more than one or two source files, the wildcard `*.cpp` can be used instead to compile:
+Alternatively, compilation can be done without using the `*.cpp` wildcard:
 <!-- CODE START -->
 ```
-g++ src/*.cpp -o build/HW5
+g++ src/LogSingletonDriver.cpp src/AbstractLogger.cpp src/FileLogger.cpp src/ScreenLogger.cpp src/LogSingleton.cpp -o build/HW5
 ```
 <!-- CODE END -->
 
@@ -26,14 +26,14 @@ g++ src/*.cpp -o build/HW5
 
 ## src Folder
 ### Source Files
-* [LogSingleton-Test.cpp](/CS1337/HW5/src/LogSingleton-Test.cpp): program driver containing `main()` and 4 helper functions
-* [CS1337Logger.cpp](/CS1337/HW5/src/CS1337Logger.cpp): defines 4 of 6 functions for the abstract base class
+* [LogSingletonDriver.cpp](/CS1337/HW5/src/LogSingletonDriver.cpp): program driver containing `main()` and 4 helper functions
+* [AbstractLogger.cpp](/CS1337/HW5/src/AbstractLogger.cpp): defines 4 of 6 functions for the abstract base class
 * [FileLogger.cpp](/CS1337/HW5/src/FileLogger.cpp): defines 4 functions for a subclass
 * [ScreenLogger.cpp](/CS1337/HW5/src/ScreenLogger.cpp): defines 4 functions for a subclass
 * [LogSingleton.cpp](/CS1337/HW5/src/LogSingleton.cpp): defines 4 of 5 functions for a class
 
 ### Header Files
-* [CS1337Logger.h](/CS1337/HW5/src/CS1337Logger.h): contains the class definition of the abstract base class, including 2 inline functions and 1 pure virtual function defined in subclasses
+* [AbstractLogger.h](/CS1337/HW5/src/AbstractLogger.h): contains the class definition of the abstract base class, including 2 inline functions and 1 pure virtual function defined in subclasses
 * [FileLogger.h](/CS1337/HW5/src/FileLogger.h): contains the class definition of a subclass
 * [ScreenLogger.h](/CS1337/HW5/src/ScreenLogger.h): contains the class definition of a subclass
 * [LogSingleton.h](/CS1337/HW5/src/LogSingleton.h): contains the class definition of a class, including 1 inline function

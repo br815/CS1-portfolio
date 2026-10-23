@@ -1,15 +1,15 @@
-/*	Author:					Bushra Rahman
-	Course:					CS 1337 (Fall 2019)
-	Date:					11/14/2019
-	LogSingleton-Test.cpp:	This source file is the main driver of the program. Its purpose is to demonstrate usage of the LogSingleton class.
-							It contains 4 helper functions in addition to main(): 
-							1) someFunction()
-							2) anotherFunction
-							3) differentFunction()
-							4) singletonTest() */
+/*	Author:						Bushra Rahman
+	Course:						CS 1337 (Fall 2019)
+	Date:						11/14/2019
+	LogSingletonDriver.cpp:		This source file is the main driver of the program. Its purpose is to demonstrate usage of the LogSingleton class.
+								It contains 4 helper functions in addition to main(): 
+								1) someFunction()
+								2) anotherFunction
+								3) differentFunction()
+								4) singletonTest() */
 
 // include the header files for the base class and its derived classes
-#include "CS1337Logger.h"
+#include "AbstractLogger.h"
 #include "ScreenLogger.h"
 #include "FileLogger.h"
 #include "LogSingleton.h"

@@ -6,7 +6,7 @@
 					initializes and dynamically allocates the parallel arrays to memory, 
 					and displays the menu and makes decisions based on user input. */
 
-#include "doTasks.h"	// header file containing the tasks' function prototypes
+#include "processArray.h"	// header file containing the tasks' function prototypes
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -55,7 +55,7 @@ int main()
 
 			int prompt = -1;			// initial value for the user-inputted prompt value
 			string searchingFor = "";	// initial value for the user-inputted substring
-			int sortingType = -1;		// initial value for the user-inputted sorting type
+			int sortingChoice = -1;		// initial value for the user-inputted sorting type
 
 			// if the number of records read in matches the number of items
 			if (count == numItems)
@@ -76,27 +76,27 @@ int main()
 						searchingFor = searchString();
 
 						// call the searching function
-						doSearch(searchingFor, numItems, lastNameArray, firstNameArray, birthdateArray);
+						runSearch(searchingFor, numItems, lastNameArray, firstNameArray, birthdateArray);
 					}
 
 					// if the option to sort is selected
 					else if (prompt == 2)
 					{
 						// call the prompt-displaying function
-						sortingType = getSortingType();
+						sortingChoice = getSortingChoice();
 
 						// if the option to display the original records has been selected
-						if(sortingType == 0)
+						if(sortingChoice == 0)
 						{
 							// call the array-displaying function
 							printArrays("** Original Records **", numItems, lastNameArray, firstNameArray, birthdateArray);
 						}
 
 						// if the options to sort by either first or last name have been selected
-						else if (sortingType == 1 || sortingType == 2)
+						else if (sortingChoice == 1 || sortingChoice == 2)
 						{
 							// call the sorting function
-							doSort (sortingType, numItems, lastNameArray, firstNameArray, birthdateArray);
+							runSort (sortingChoice, numItems, lastNameArray, firstNameArray, birthdateArray);
 						}
 
 					}

@@ -10,18 +10,16 @@ Open terminal in `CS1-portfolio` and run:
 ```
 cd CS1337/HW6
 mkdir build
-g++ src/main.cpp src/AbstractObserver.cpp src/Subject.cpp -o build/HW6
+g++ src/*.cpp -o build/HW6
 build/HW6
 ```
 <!-- CODE END -->
-For a project like this with more than one or two source files, the wildcard `*.cpp` can be used instead to compile:
+Alternatively, compilation can be done without using the `*.cpp` wildcard:
 <!-- CODE START -->
 ```
-g++ src/*.cpp -o build/HW6
+g++ src/main.cpp src/AbstractObserver.cpp src/Subject.cpp -o build/HW6
 ```
 <!-- CODE END -->
-
-Alternative compilation instructions can be followed, if desired, to produce the executable elsewhere (eg. in a `build` folder).
 
 ## Homework Instructions
 * [HW 6: Design Patterns Continued](/CS1337/HW6/HW6_Design_Patterns_Cont.pdf)

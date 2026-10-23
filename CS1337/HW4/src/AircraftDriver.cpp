@@ -1,15 +1,15 @@
-/*	Author:				Bushra Rahman
-	Course:				CS 1337 (Fall 2019)
-	Date:				10/31/2019
-	Aircraft-Test.cpp:	This source file is the main driver of the project. It contains 8 helper functions in addition to main(): 
-						1) parseStringByDelimiter()
-						2) parseString()
-						3) stringBeforeComment()
-						4) isPositiveInteger()
-						5) hasDoubleQuotedText()
-						6) readFileAndBuildAircraft()
-						7) testAircraft()
-						8) testAircraftClass() */
+/*	Author:					Bushra Rahman
+	Course:					CS 1337 (Fall 2019)
+	Date:					10/31/2019
+	AircraftDriver.cpp:		This source file is the main driver of the project. It contains 8 helper functions in addition to main(): 
+							1) parseStringByDelimiter()
+							2) parseString()
+							3) stringBeforeComment()
+							4) isPositiveInteger()
+							5) hasDoubleQuotedText()
+							6) readFileAndBuildAircraft()
+							7) testAircraft()
+							8) testAircraftClass() */
 
 #include "PassengerAircraft.h"	// header file for the derived class PassengerAircraft
 #include "AcrobatAircraft.h"	// header file for the derived class AcrobatAircraft

@@ -10,15 +10,14 @@ Open terminal in `CS1-portfolio` and run:
 ```
 cd CS1337/HW4
 mkdir build
-g++ src/Aircraft-Test.cpp src/Aircraft.cpp src/AcrobatAircraft.cpp src/FreightAircraft.cpp src/PassengerAircraft.cpp -o build/HW4
+g++ src/*.cpp -o build/HW4
 build/HW4
 ```
 <!-- CODE END -->
-
-For a project like this with more than one or two source files, the wildcard `*.cpp` can be used instead to compile:
+Alternatively, compilation can be done without using the `*.cpp` wildcard:
 <!-- CODE START -->
 ```
-g++ src/*.cpp -o build/HW4
+g++ src/AircraftDriver.cpp src/Aircraft.cpp src/AcrobatAircraft.cpp src/FreightAircraft.cpp src/PassengerAircraft.cpp -o build/HW4
 ```
 <!-- CODE END -->
 
@@ -27,7 +26,7 @@ g++ src/*.cpp -o build/HW4
 
 ## src Folder
 ### Source Files
-* [Aircraft-Test.cpp](/CS1337/HW4/src/Aircraft-Test.cpp): program driver containing `main()` and 8 helper functions
+* [AircraftDriver.cpp](/CS1337/HW4/src/AircraftDriver.cpp): program driver containing `main()` and 8 helper functions
 * [Aircraft.cpp](/CS1337/HW4/src/Aircraft.cpp): defines 10 of 11 functions for the base class
 * [AcrobatAircraft.cpp](/CS1337/HW4/src/AcrobatAircraft.cpp): defines 8 functions for a subclass
 * [FreightAircraft.cpp](/CS1337/HW4/src/FreightAircraft.cpp): defines 7 functions for a subclass

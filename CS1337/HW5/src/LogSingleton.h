@@ -7,7 +7,7 @@
 #ifndef LOGSINGLETON_H_		// if LOGSINGLETON_H_ is not defined, define it (start of header guard)
 #define LOGSINGLETON_H_		// define LOGSINGLETON_H_ once to prevent multiple inclusions
 // include the header files for all the logging classes
-#include "CS1337Logger.h"
+#include "AbstractLogger.h"
 #include "FileLogger.h"
 #include "ScreenLogger.h"
 using namespace std;
@@ -25,8 +25,8 @@ private:
 	// a counter for all LogSingleton objects
 	static int instanceCount;
 
-	// a pointer to a CS1337Logger object
-	CS1337Logger* ptrLogger;
+	// a pointer to a AbstractLogger object
+	AbstractLogger* ptrLogger;
 
 
 public:
@@ -40,7 +40,7 @@ public:
 	int getInstanceCount();
 
 	// inline getter for ptrLogger, returns the pointer
-	static CS1337Logger* GetLogger()
+	static AbstractLogger* GetLogger()
 	{
 		return LogSingleton::getTheSingleton()->ptrLogger;
 	}

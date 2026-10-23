@@ -3,7 +3,7 @@
 	Date:					10/8/2019
 	testDriver.c:			This source file contains a test driver for debugging purposes only. */
 
-#include "drinkmachine.h"		// header file containing the function prototypes, struct definitions, and enum definitions
+#include "drinkmachine.h"	// header file containing the function prototypes, struct definitions, and enum definitions
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
