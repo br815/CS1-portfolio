@@ -10,14 +10,10 @@ Open terminal in `CS1-portfolio` and run:
 ```
 cd CS1337/HW2
 mkdir build
+g++ src/main.cpp src/processArray.cpp -o build/HW2
+# Or use the *.cpp wildcard for a conciser compilation instruction:
 g++ src/*.cpp -o build/HW2
 build/HW2
-```
-<!-- CODE END -->
-Alternatively, compilation can be done without using the `*.cpp` wildcard:
-<!-- CODE START -->
-```
-g++ src/main.cpp src/processArray.cpp -o build/HW2
 ```
 <!-- CODE END -->
 

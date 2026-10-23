@@ -10,14 +10,10 @@ Open terminal in `CS1-portfolio` and run:
 ```
 cd CS1337/HW4
 mkdir build
+g++ src/AircraftDriver.cpp src/Aircraft.cpp src/AcrobatAircraft.cpp src/FreightAircraft.cpp src/PassengerAircraft.cpp -o build/HW4
+# Or use the *.cpp wildcard for a conciser compilation instruction:
 g++ src/*.cpp -o build/HW4
 build/HW4
-```
-<!-- CODE END -->
-Alternatively, compilation can be done without using the `*.cpp` wildcard:
-<!-- CODE START -->
-```
-g++ src/AircraftDriver.cpp src/Aircraft.cpp src/AcrobatAircraft.cpp src/FreightAircraft.cpp src/PassengerAircraft.cpp -o build/HW4
 ```
 <!-- CODE END -->
 

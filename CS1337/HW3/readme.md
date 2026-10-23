@@ -10,14 +10,10 @@ Open terminal in `CS1-portfolio` and run:
 ```
 cd CS1337/HW3
 mkdir build
+gcc src/drinkMachineDriver.c src/drinkMachine.c -o build/HW3
+# Or use the *.c wildcard for a conciser compilation instruction:
 gcc src/*.c -o build/HW3
 build/HW3
-```
-<!-- CODE END -->
-Alternatively, compilation can be done without using the `*.c` wildcard:
-<!-- CODE START -->
-```
-gcc src/drinkMachineDriver.c src/drinkMachine.c -o build/HW3
 ```
 <!-- CODE END -->
 

@@ -10,14 +10,10 @@ Open terminal in `CS1-portfolio` and run:
 ```
 cd CS1337/HW6
 mkdir build
+g++ src/main.cpp src/AbstractObserver.cpp src/Subject.cpp -o build/HW6
+# Or use the *.cpp wildcard for a conciser compilation instruction:
 g++ src/*.cpp -o build/HW6
 build/HW6
-```
-<!-- CODE END -->
-Alternatively, compilation can be done without using the `*.cpp` wildcard:
-<!-- CODE START -->
-```
-g++ src/main.cpp src/AbstractObserver.cpp src/Subject.cpp -o build/HW6
 ```
 <!-- CODE END -->
 

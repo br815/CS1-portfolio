@@ -10,14 +10,10 @@ Open terminal in `CS1-portfolio` and run:
 ```
 cd CS1337/HW1
 mkdir build
+g++ src/main.cpp src/amortize.cpp -o build/HW1
+# Or use the *.cpp wildcard for a conciser compilation instruction:
 g++ src/*.cpp -o build/HW1
 build/HW1
-```
-<!-- CODE END -->
-Alternatively, compilation can be done without using the `*.cpp` wildcard:
-<!-- CODE START -->
-```
-g++ src/main.cpp src/amortize.cpp -o build/HW1
 ```
 <!-- CODE END -->
 
