@@ -10,7 +10,7 @@ Open terminal in `CS1-portfolio` and run:
 ```
 cd CS1337/HW5
 mkdir build
-g++ src/LogSingletonDriver.cpp src/AbstractLogger.cpp src/FileLogger.cpp src/ScreenLogger.cpp src/LogSingleton.cpp -o build/HW5
+g++ src/LogSingleton-Driver.cpp src/AbstractLogger.cpp src/FileLogger.cpp src/ScreenLogger.cpp src/LogSingleton.cpp -o build/HW5
 # Or use the *.cpp wildcard for a conciser compilation instruction:
 g++ src/*.cpp -o build/HW5
 build/HW5
@@ -22,7 +22,7 @@ build/HW5
 
 ## src Folder
 ### Source Files
-* [LogSingletonDriver.cpp](/CS1337/HW5/src/LogSingletonDriver.cpp): program driver containing `main()` and 4 helper functions
+* [LogSingleton-Driver.cpp](/CS1337/HW5/src/LogSingleton-Driver.cpp): program driver containing `main()` and 4 helper functions
 * [AbstractLogger.cpp](/CS1337/HW5/src/AbstractLogger.cpp): defines 4 of 6 functions for the abstract base class
 * [FileLogger.cpp](/CS1337/HW5/src/FileLogger.cpp): defines 4 functions for a subclass
 * [ScreenLogger.cpp](/CS1337/HW5/src/ScreenLogger.cpp): defines 4 functions for a subclass

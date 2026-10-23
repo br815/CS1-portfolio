@@ -10,7 +10,7 @@ Open terminal in `CS1-portfolio` and run:
 ```
 cd CS1337/HW4
 mkdir build
-g++ src/AircraftDriver.cpp src/Aircraft.cpp src/AcrobatAircraft.cpp src/FreightAircraft.cpp src/PassengerAircraft.cpp -o build/HW4
+g++ src/Aircraft-Driver.cpp src/Aircraft.cpp src/AcrobatAircraft.cpp src/FreightAircraft.cpp src/PassengerAircraft.cpp -o build/HW4
 # Or use the *.cpp wildcard for a conciser compilation instruction:
 g++ src/*.cpp -o build/HW4
 build/HW4
@@ -22,7 +22,7 @@ build/HW4
 
 ## src Folder
 ### Source Files
-* [AircraftDriver.cpp](/CS1337/HW4/src/AircraftDriver.cpp): program driver containing `main()` and 8 helper functions
+* [Aircraft-Driver.cpp](/CS1337/HW4/src/Aircraft-Driver.cpp): program driver containing `main()` and 8 helper functions
 * [Aircraft.cpp](/CS1337/HW4/src/Aircraft.cpp): defines 10 of 11 functions for the base class
 * [AcrobatAircraft.cpp](/CS1337/HW4/src/AcrobatAircraft.cpp): defines 8 functions for a subclass
 * [FreightAircraft.cpp](/CS1337/HW4/src/FreightAircraft.cpp): defines 7 functions for a subclass
