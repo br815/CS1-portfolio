@@ -2,9 +2,9 @@
 
 # CS1 Portfolio | HW4: Classes, Inheritance, and Polymorphism
 ## Author: Bushra Rahman
-This is the repository for [CS 1337/HW4](/CS1337/HW4).
+This is the repository for [`CS 1337/HW4/`](/CS1337/HW4).
 
-## Execution Instructions
+## Compilation & Execution Instructions
 Open terminal in `CS1-portfolio` and run:
 <!-- CODE START -->
 ```
@@ -20,7 +20,7 @@ build/HW4
 ## Homework Instructions
 * [HW 4: Classes, Inheritance, and Polymorphism](/CS1337/HW4/HW4_Classes.pdf)
 
-## src Folder
+## `src/` Folder
 ### Source Files
 * [Aircraft-Driver.cpp](/CS1337/HW4/src/Aircraft-Driver.cpp): program driver containing `main()` and 8 helper functions
 * [Aircraft.cpp](/CS1337/HW4/src/Aircraft.cpp): defines 10 of 11 functions for the base class

@@ -2,9 +2,9 @@
 
 # CS1 Portfolio | HW2: Searching and Sorting on Arrays
 ## Author: Bushra Rahman
-This is the repository for [CS 1337/HW2](/CS1337/HW2).
+This is the repository for [`CS 1337/HW2/`](/CS1337/HW2).
 
-## Execution Instructions
+## Compilation & Execution Instructions
 Open terminal in `CS1-portfolio` and run:
 <!-- CODE START -->
 ```
@@ -20,7 +20,7 @@ build/HW2
 ## Homework Instructions
 * [HW 2: Searching and Sorting on Arrays](/CS1337/HW2/HW2_Searching_Sorting_Arrays.pdf)
 
-## src Folder
+## `src/` Folder
 ### Source Files
 * [main.cpp](/CS1337/HW2/src/main.cpp): program driver containing `main()`
 * [processArray.cpp](/CS1337/HW2/src/processArray.cpp): implementation of 6 functions

@@ -2,9 +2,9 @@
 
 # CS1 Portfolio | HW1: Introduction to Multi-File Projects
 ## Author: Bushra Rahman
-This is the repository for [CS 1337/HW1](/CS1337/HW1).
+This is the repository for [`CS 1337/HW1/`](/CS1337/HW1).
 
-## Execution Instructions
+## Compilation & Execution Instructions
 Open terminal in `CS1-portfolio` and run:
 <!-- CODE START -->
 ```
@@ -20,7 +20,7 @@ build/HW1
 ## Homework Instructions
 * [HW 1: Introduction to Multi-File Projects](/CS1337/HW1/HW1_Intro_To_Multi_File_Projects.pdf)
 
-## src Folder
+## `src/` Folder
 ### Source Files
 * [main.cpp](/CS1337/HW1/src/main.cpp): program driver containing `main()`
 * [amortize.cpp](/CS1337/HW1/src/amortize.cpp): implementation of 1 function

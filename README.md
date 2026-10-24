@@ -59,7 +59,7 @@ To install MinGW on Windows 11 or less, follow [these instructions](/CS1337/Ecli
 4. After installing MinGW and adding it to `Path`, make sure to restart your IDE to avoid compilation errors.
 
 ## C and C++ Compilation & Execution Overview
-(Using [HW1](/CS1337/HW1/) as an example. HW1 contains a [src](/CS1337/HW1/src/) folder,\
+(Using [`HW1/`](/CS1337/HW1/) as an example. HW1 contains a [`src/`](/CS1337/HW1/src/) folder,\
 which contains 2 source files [main.cpp](/CS1337/HW1/src/main.cpp) and [amortize.cpp](/CS1337/HW1/src/amortize.cpp), and 1 header file [amortize.h](/CS1337/HW1/src/amortize.h).)
 
 Open terminal in `CS1-portfolio` and run:
@@ -73,24 +73,24 @@ build/HW1                       # provide the build folder as the path to the .e
 <!-- CODE END -->
 C and C++ compilation & execution can occur from anywhere through the use of relative paths, as long as the compilation instruction specifies the relative path to the `.cpp` or `.c` source files & the execution instruction specifies the relative path to the `.exe` executable file. However, execution *should* occur from the project root (because that is the conventional location from which your program should retrieve any IO files).
 
-In order to achieve both from the project root, this compilation instruction goes through `src/` to compile all `.cpp` source files in [src](/CS1337/HW1/src/). Alternatively, each source file can be compiled individually through their paths:
+In order to achieve both from the project root, this compilation instruction goes through `src/` to compile all `.cpp` source files in `src/`. Alternatively, each source file can be compiled individually through their paths:
 <!-- CODE START -->
 ```
 g++ src/main.cpp src/amortize.cpp -o build/HW1
 ```
 <!-- CODE END -->
-By default, C and C++ compilation produces `.exe` files directly in the same folder where compilation occurred; however, the provided compilation instruction uses the `-o` flag to produce the `.exe` file in a [build](/CS1337/HW1/build/) folder for clearer file organization.
+By default, C and C++ compilation produces `.exe` files directly in the same folder where compilation occurred; however, the provided compilation instruction uses the `-o` flag to produce the `.exe` file in a `build/` folder for clearer file organization.
 
 Then, execution can occur from the project root as long as the path to the executable is specified, which for this project is through `build/`.
 
-Technically, since compilation & execution *can* occur from anywhere as long as the user provides the necessary relative file paths to the source files & executable, execution for this project *can* also occur from within the same folder as the `.exe` file. To do so, go into `build` and execute directly:
+Technically, since compilation & execution *can* occur from anywhere as long as the user provides the necessary relative file paths to the source files & executable, execution for this project *can* also occur from within the same folder as the `.exe` file. To do so, go into `build/` and execute directly:
 <!-- CODE START -->
 ```
 cd build
 ./HW1
 ```
 <!-- CODE END -->
-The `.` indicates the working directory as the path to the exectuable file. However, since the execution is not occurring at the project root, note that any user-provided IO files existing at the project root will have to be named using their relative paths: [`../input.txt`](/CS1337/HW1/input.txt/) or [`../output.txt`](/CS1337/HW1/output.txt). But if the names of these IO files are hard-coded into the source code without their relative paths, then execution *must* occur from the same level as those IO files, ie. the project root.
+The `.` indicates the working directory as the path to the exectuable file. However, since the execution is not occurring at the project root, note that any user-provided IO files existing at the project root will have to be named using their relative paths: `../`[input.txt](/CS1337/HW1/input.txt/) or `../`[output.txt](/CS1337/HW1/output.txt). But if the names of these IO files are hard-coded into the source code without their relative paths, then execution *must* occur from the same level as those IO files, ie. the project root.
 
 Similar compilation & execution behavior can be achieved through alternative commands, like:
 <!-- CODE START -->
@@ -128,10 +128,10 @@ Note that compilation and execution can be done either...
     * [HW 4: Classes, Inheritance, and Polymorphism](/CS1337/HW4/HW4_Classes.pdf)
     * [HW 4 readme](/CS1337/HW4/readme.md)
 * HW5
-    * [HW 5: Design Patterns](/CS1337/HW5/HW5_Design_Patterns.pdf)
+    * [HW 5: The Singleton Design Pattern](/CS1337/HW5/HW5_Singleton_Design_Pattern.pdf)
     * [HW 5 readme](/CS1337/HW5/readme.md)
 * HW6
-    * [HW 6: Design Patterns Continued](/CS1337/HW6/HW6_Design_Patterns_Cont.pdf)
+    * [HW 6: The Observer Design Pattern](/CS1337/HW6/HW6_Observer_Design_Pattern.pdf)
     * [HW 6 readme](/CS1337/HW6/readme.md)
 
 ## Notes

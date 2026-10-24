@@ -1,10 +1,10 @@
 <!-- To preview this markdown file in VSCode: Ctrl+Shift+V -->
 
-# CS1 Portfolio | HW6: Design Patterns Continued
+# CS1 Portfolio | HW6: The Observer Design Pattern
 ## Author: Bushra Rahman
-This is the repository for [CS 1337/HW6](/CS1337/HW6).
+This is the repository for [`CS 1337/HW6/`](/CS1337/HW6).
 
-## Execution Instructions
+## Compilation & Execution Instructions
 Open terminal in `CS1-portfolio` and run:
 <!-- CODE START -->
 ```
@@ -18,9 +18,9 @@ build/HW6
 <!-- CODE END -->
 
 ## Homework Instructions
-* [HW 6: Design Patterns Continued](/CS1337/HW6/HW6_Design_Patterns_Cont.pdf)
+* [HW 6: The Observer Design Pattern](/CS1337/HW6/HW6_Observer_Design_Pattern.pdf)
 
-## src Folder
+## `src/` Folder
 ### Source Files
 * [main.cpp](/CS1337/HW6/src/main.cpp): program driver containing `main()`
 * [AbstractObserver.cpp](/CS1337/HW6/src/AbstractObserver.cpp): defines 1 static member variable for the abstract base class

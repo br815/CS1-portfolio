@@ -2,9 +2,9 @@
 
 # CS1 Portfolio | HW3: Memory Management in C
 ## Author: Bushra Rahman
-This is the repository for [CS 1337/HW3](/CS1337/HW3). *Note that this homework is in C, not C++.*
+This is the repository for [`CS 1337/HW3/`](/CS1337/HW3). *Note that this homework is in C, not C++.*
 
-## Execution Instructions
+## Compilation & Execution Instructions
 Open terminal in `CS1-portfolio` and run:
 <!-- CODE START -->
 ```
@@ -20,7 +20,7 @@ build/HW3
 ## Homework Instructions
 * [HW 3: Memory Management in C](/CS1337/HW3/HW3_Memory_Mgmt_C.pdf)
 
-## src Folder
+## `src/` Folder
 ### Source Files
 * [drinkMachineDriver.c](/CS1337/HW3/src/drinkMachineDriver.c): program driver containing `main()` and 1 helper function
 * [testDriver.c](/CS1337/HW3/src/testDriver.c): test driver

@@ -1,10 +1,10 @@
 <!-- To preview this markdown file in VSCode: Ctrl+Shift+V -->
 
-# CS1 Portfolio | HW5: Design Patterns
+# CS1 Portfolio | HW5: The Singleton Design Pattern
 ## Author: Bushra Rahman
-This is the repository for [CS 1337/HW5](/CS1337/HW5).
+This is the repository for [`CS 1337/HW5/`](/CS1337/HW5).
 
-## Execution Instructions
+## Compilation & Execution Instructions
 Open terminal in `CS1-portfolio` and run:
 <!-- CODE START -->
 ```
@@ -18,9 +18,9 @@ build/HW5
 <!-- CODE END -->
 
 ## Homework Instructions
-* [HW 5: Design Patterns](/CS1337/HW5/HW5_Design_Patterns.pdf)
+* [HW 5: The Singleton Design Pattern](/CS1337/HW5/HW5_Singleton_Design_Pattern.pdf)
 
-## src Folder
+## `src/` Folder
 ### Source Files
 * [LogSingleton-Driver.cpp](/CS1337/HW5/src/LogSingleton-Driver.cpp): program driver containing `main()` and 4 helper functions
 * [AbstractLogger.cpp](/CS1337/HW5/src/AbstractLogger.cpp): defines 4 of 6 functions for the abstract base class
