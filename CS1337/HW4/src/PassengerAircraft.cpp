@@ -20,7 +20,7 @@ using namespace std;
 						Aircraft(int seatCapacityR, int aircraftTypeR which is 1, int numberOfEnginesR).
 	Return:				None, initializes a PassengerAircraft object. */
 PassengerAircraft::PassengerAircraft(string strRangeAndSpeed, int seatCapacity, int numberOfEngines) 
-									: Aircraft (seatCapacity, 1, numberOfEngines)
+									: Aircraft(seatCapacity, 1, numberOfEngines)
 {
 	// use the "this" pointer to the object to initialize the object's string field
 	this->strRangeAndSpeed = strRangeAndSpeed;

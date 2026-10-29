@@ -20,7 +20,7 @@ using namespace std;
 						Aircraft(int seatCapacityR, int aircraftTypeR which is 3, int numberOfEnginesR).
 	Return:				None, initializes a FreightAircraft object. */
 FreightAircraft::FreightAircraft(string strFreightCompanyR, string strCargoCapacityR, int numberOfEngines, int seatCapacity) 
-								: Aircraft (seatCapacity, 3, numberOfEngines)
+								: Aircraft(seatCapacity, 3, numberOfEngines)
 {
 	strFreightCompany = strFreightCompanyR;
 	strCargoCapacity = strCargoCapacityR;

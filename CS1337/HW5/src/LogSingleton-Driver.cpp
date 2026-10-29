@@ -122,7 +122,7 @@ int singletonTest()
 	i3->GetLogger()->setLoggingEnabled(true);
 
 	// proves all the pointers are pointing to the same LogSingleton object
-	if ((i1 == i2) && (i2 == i3))
+	if((i1 == i2) && (i2 == i3))
 	{
 		cout << endl << "All instances are the same" << endl << endl << endl;
 	}

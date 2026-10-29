@@ -19,7 +19,7 @@ using namespace std;
 FileLogger::FileLogger() : AbstractLogger()
 {
 	fout.open(FILENAME);
-	if (!fout)
+	if(!fout)
     {
         cerr << "ERROR: Could not open file: " << FILENAME << endl;
     }
@@ -58,7 +58,7 @@ void FileLogger::displayMessage(const char* message)
 	Return:				None. */
 void FileLogger::logMessage(const char* message)
 {
-	if (getLoggingEnabled() == true)
+	if(getLoggingEnabled() == true)
 	{
 		displayMessage(message);
 	}

@@ -31,13 +31,13 @@ int main()
 	// open the input file
 	inputFile.open(inputFileName);
 
-	if (inputFile)
+	if(inputFile)
 	{
 		// read in the number of records
 		inputFile >> numItems;
 
 		// if the number of records is valid
-		if (numItems > 0)
+		if(numItems > 0)
 		{
 			// dynamically allocate memory to the arrays
 			string *lastNameArray = new string[numItems];
@@ -46,7 +46,7 @@ int main()
 
 			// read in the contents of the input file into the arrays
 			int count = 0;
-			while (count < numItems && inputFile >> lastNameArray[count]
+			while(count < numItems && inputFile >> lastNameArray[count]
 					&& inputFile >> firstNameArray[count]
 					&& inputFile >> birthdateArray[count])
 			{
@@ -58,10 +58,10 @@ int main()
 			int sortingChoice = -1;		// initial value for the user-inputted sorting type
 
 			// if the number of records read in matches the number of items
-			if (count == numItems)
+			if(count == numItems)
 			{
 				// the menu displays until the user exits by entering 0
-				while (prompt != 0)
+				while(prompt != 0)
 				{
 					// call the prompt-displaying function
 					prompt = getPrompt();
@@ -80,7 +80,7 @@ int main()
 					}
 
 					// if the option to sort is selected
-					else if (prompt == 2)
+					else if(prompt == 2)
 					{
 						// call the prompt-displaying function
 						sortingChoice = getSortingChoice();
@@ -93,10 +93,10 @@ int main()
 						}
 
 						// if the options to sort by either first or last name have been selected
-						else if (sortingChoice == 1 || sortingChoice == 2)
+						else if(sortingChoice == 1 || sortingChoice == 2)
 						{
 							// call the sorting function
-							runSort (sortingChoice, numItems, lastNameArray, firstNameArray, birthdateArray);
+							runSort(sortingChoice, numItems, lastNameArray, firstNameArray, birthdateArray);
 						}
 
 					}

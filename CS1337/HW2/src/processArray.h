@@ -10,8 +10,8 @@
 #include <string>
 using namespace std;
 
-void runSort (int sortingChoice, int numItems, string lastNameArray[], string firstNameArray[], string birthdateArray[]);
-void runSearch (string searchingFor, int numItems, string lastNameArray[], string firstNameArray[], string birthdateArray[]);
+void runSort(int sortingChoice, int numItems, string lastNameArray[], string firstNameArray[], string birthdateArray[]);
+void runSearch(string searchingFor, int numItems, string lastNameArray[], string firstNameArray[], string birthdateArray[]);
 void printArrays(string title, int numItems, string lastNameArray[], string firstNameArray[], string birthdateArray[]);
 int getSortingChoice();
 string searchString();

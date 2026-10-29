@@ -32,7 +32,7 @@ using namespace std;
 	Param:    		int sortingChoice, int numItems, string lastNameArray[], string firstNameArray[], string birthdateArray[]
 					Variables to control the sorting process, and arrays containing the values being sorted.
 	Return:			None. */
-void runSort (int sortingChoice, int numItems, string lastNameArray[], string firstNameArray[], string birthdateArray[])
+void runSort(int sortingChoice, int numItems, string lastNameArray[], string firstNameArray[], string birthdateArray[])
 {
 	string searchingIn;                // the string of the current element
 	string searchingFor;               // the strings of the subsequent elements
@@ -66,7 +66,7 @@ void runSort (int sortingChoice, int numItems, string lastNameArray[], string fi
 		}
 
 		// if the arrays are to be sorted by first name
-		else if (sortingChoice == 2)
+		else if(sortingChoice == 2)
 		{
 			name[i] = firstNameArray[i];
 			title = "** Records Sorted By First Name **";
@@ -75,12 +75,12 @@ void runSort (int sortingChoice, int numItems, string lastNameArray[], string fi
 	// initialization ends here
 
 	// actual sorting starts here (an implementation of selection sort)
-	for (int i = 0; i < numItems; i++)
+	for(int i = 0; i < numItems; i++)
 	{
 		searchingIn = name[i];
 		indexOfSmallestItem = -1;
 		// this nested loop compares the current element to every element after it
-		for (int j = i+1; j < numItems; j++)
+		for(int j = i+1; j < numItems; j++)
 		{
 			compareResult = -1;           // result of the string comparison
 			searchingFor = name[j];       // element being compared with name[i]
@@ -90,7 +90,7 @@ void runSort (int sortingChoice, int numItems, string lastNameArray[], string fi
 			compareResult = searchingIn.compare(0, len, searchingFor);
 
 			// if the compared string, name[i] is greater than the comparing string, name[j]
-			if (compareResult > 0)
+			if(compareResult > 0)
 			{
 				// name[i] is swapped with name[j] b/c name[j] is smaller and should come first
 				searchingIn = searchingFor;
@@ -101,7 +101,7 @@ void runSort (int sortingChoice, int numItems, string lastNameArray[], string fi
 
 
 		// if the smallest item is further down the array after the current element
-		if (indexOfSmallestItem > i)
+		if(indexOfSmallestItem > i)
 		{
 			savedString = name[i];                    // the i'th element is saved so it can be swapped later
 			name[i] = name[indexOfSmallestItem];      // the i'th element receives the smallest string
@@ -132,7 +132,7 @@ void runSort (int sortingChoice, int numItems, string lastNameArray[], string fi
 	Param:    		string searchingFor, int numItems, string lastNameArray[], string firstNameArray[], string birthdateArray[]
 					Variables to control the searching process, and arrays containing the values being searched.
 	Return:			None. */
-void runSearch (string searchingFor, int numItems, string lastNameArray[], string firstNameArray[], string birthdateArray[])
+void runSearch(string searchingFor, int numItems, string lastNameArray[], string firstNameArray[], string birthdateArray[])
 {
 	string searchingIn = "";             // any string in any array
 	int compareResult = -1;              // result of the string comparison
@@ -146,7 +146,7 @@ void runSearch (string searchingFor, int numItems, string lastNameArray[], strin
 		searchingIn = lastNameArray[i];
 		compareResult = searchingIn.compare(0, len, searchingFor);
 		// if the given substring is contained in the current item
-		if (compareResult == 0)
+		if(compareResult == 0)
 		{
 			matchFound[i] = true;   // a flag is made for this index
 			continue;               // there's no need to search the other fields since a match was found here
@@ -157,7 +157,7 @@ void runSearch (string searchingFor, int numItems, string lastNameArray[], strin
 		searchingIn = firstNameArray[i];
 		compareResult = searchingIn.compare(0, len, searchingFor);
 
-		if (compareResult == 0)
+		if(compareResult == 0)
 		{
 			matchFound[i] = true;
 			continue;
@@ -168,7 +168,7 @@ void runSearch (string searchingFor, int numItems, string lastNameArray[], strin
 		searchingIn = birthdateArray[i];
 		compareResult = searchingIn.compare(0, len, searchingFor);
 
-		if (compareResult == 0)
+		if(compareResult == 0)
 		{
 			matchFound[i] = true;
 		}
@@ -179,7 +179,7 @@ void runSearch (string searchingFor, int numItems, string lastNameArray[], strin
 	// loops back through the array of flags to print out all the matches from each array
 	for(int i = 0 ; i < numItems; i++)
 	{
-		if (matchFound[i])
+		if(matchFound[i])
 		{
 			numMatchedItems++;
 			cout << lastNameArray[i] << " " << firstNameArray[i] << " " << birthdateArray[i] << endl;
@@ -206,7 +206,7 @@ void printArrays(string title, int numItems, string lastNameArray[], string firs
 	cout << title << endl;
 
 	// prints the original unsorted arrays
-	for (int i = 0; i < numItems; i++)
+	for(int i = 0; i < numItems; i++)
 	{
 		cout << lastNameArray[i] << " " << firstNameArray[i] << " " << birthdateArray[i] << endl;
 	}

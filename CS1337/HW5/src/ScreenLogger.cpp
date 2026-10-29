@@ -53,7 +53,7 @@ void ScreenLogger::displayMessage(const char* message)
 	Return:				None. */
 void ScreenLogger::logMessage(const char* message)
 {
-	if (getLoggingEnabled() == true)
+	if(getLoggingEnabled() == true)
 	{
 		displayMessage(message);
 	}

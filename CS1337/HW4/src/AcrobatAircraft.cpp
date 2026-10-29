@@ -20,7 +20,7 @@ using namespace std;
 						Aircraft(int seatCapacityR, int aircraftTypeR which is 2, int numberOfEnginesR).
 	Return:				None, initializes an AcrobatAircraft object. */
 AcrobatAircraft::AcrobatAircraft(string strManufacturer, string strPerformanceCapability, int seatCapacity, int numberOfEngines) 
-								: Aircraft (seatCapacity, 2, numberOfEngines)
+								: Aircraft(seatCapacity, 2, numberOfEngines)
 {
 	// use the "this" pointer to the object to initialize the object's string fields
 	this->strManufacturer = strManufacturer;

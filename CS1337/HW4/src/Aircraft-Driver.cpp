@@ -110,7 +110,7 @@ void stringBeforeComment(string& theLine)
 	//cout << endl << "index = [" << index << "]";
 	string beforeComment = "";
 
-	if (index >= 0)
+	if(index >= 0)
 	{
 		// the line contains the // character sequence, so discard everything after the first //
 		beforeComment = theLine.substr(0, index);
@@ -236,13 +236,13 @@ void readFileAndBuildAircraft(string inputFileName)
 	int seatCapacity = -1;
 
 	// the input file was successfully opened
-	if (inputFilestream)
+	if(inputFilestream)
 	{
 
 		// vector is created only if the input file is opened properly
 		vector<Aircraft *> vectorOfAircraft;
 
-		while (!inputFilestream.eof())
+		while(!inputFilestream.eof())
 		{
 			// reads blank lines, spaces, tabs...
 			getline(inputFilestream, theLine);
@@ -393,7 +393,7 @@ void readFileAndBuildAircraft(string inputFileName)
 						continue;
 					}
 
-					vectorOfAircraft.push_back(new Aircraft (seatCapacity, aircraftType, numberOfEngines));
+					vectorOfAircraft.push_back(new Aircraft(seatCapacity, aircraftType, numberOfEngines));
 					//aa->printCharacteristics();
 
 					//cout << endl << "Create new aircraft, type: " << aircraftType << ", Number of Engines: " << numberOfEngines << ", Seat Capacity: " << seatCapacity;
@@ -417,7 +417,7 @@ void readFileAndBuildAircraft(string inputFileName)
 					}
 					else
 					{
-						vectorOfAircraft.push_back(new PassengerAircraft (str1, seatCapacity, numberOfEngines));
+						vectorOfAircraft.push_back(new PassengerAircraft(str1, seatCapacity, numberOfEngines));
 						//aa->printCharacteristics();
 
 						//cout << endl << "Create new aircraft, type: " << aircraftType << ", Number of Engines: " << numberOfEngines << ", Seat Capacity: " << seatCapacity << ", Range & speed description: [" << str1 << "].";
@@ -470,7 +470,7 @@ void readFileAndBuildAircraft(string inputFileName)
 
 
 
-		} // end of while (!inputFile.eof())
+		} // end of while(!inputFile.eof())
 
 		inputFilestream.close();
 		if(currentDataLine < 1)
@@ -544,10 +544,10 @@ void testAircraftClass()
 	FreightAircraft f("Fed-Ex", "Carries domestic stuff only", 4, 4);
 	f.printCharacteristics();
 
-	Aircraft *aa = new AcrobatAircraft ("AirBuster", "Base Sleek Dancer", 15, 2);
+	Aircraft *aa = new AcrobatAircraft("AirBuster", "Base Sleek Dancer", 15, 2);
 	aa->printCharacteristics();
 
-	Aircraft *af = new FreightAircraft ("DHL-OK", "European star", 3, 2);
+	Aircraft *af = new FreightAircraft("DHL-OK", "European star", 3, 2);
 	af->printCharacteristics();
 	//cout << endl << endl;
 	//af->printCharacteristics();

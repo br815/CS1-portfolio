@@ -51,7 +51,7 @@ void Subject::removeObserver(AbstractObserver &observer)
 	AbstractObserver *ptrOtherObserver;
 
 	// loop through the list of Observers
-	for (iter = observers.begin(); iter != observers.end(); iter++)
+	for(iter = observers.begin(); iter != observers.end(); iter++)
 	{
 		// recast ptrOtherObserver
 		ptrOtherObserver = reinterpret_cast<AbstractObserver *>(*iter);
@@ -119,7 +119,7 @@ void Subject::notify()
 	AbstractObserver *ptrOtherObserver;
 
 	// loop through the list of Observers
-	for (iter = observers.begin(); iter != observers.end(); iter++)
+	for(iter = observers.begin(); iter != observers.end(); iter++)
 	{
 		// recast ptrOtherObserver
 		ptrOtherObserver = reinterpret_cast<AbstractObserver *>(*iter);

@@ -43,31 +43,31 @@ int main()
    // open the input file
    inputFile.open(inputFileName);
 
-   if (inputFile)
+   if(inputFile)
    {
 	   // open the output file
-	     outputFile.open(outputFileName);
+	   outputFile.open(outputFileName);
 
-	     if (outputFile)
-	     {
-	    	 // read in the first number, the number of amortization schedules to be generated
-	    	 inputFile >> numLoans;
+	   if(outputFile)
+	   {
+	    	// read in the first number, the number of amortization schedules to be generated
+	    	inputFile >> numLoans;
 
-	    	 // for each set of 3 numbers (one set of amortization data), generate one schedule
-	         for (int currentLoan = 0; currentLoan < numLoans; currentLoan++)
-	         {
-	        	 // read in the 3 numbers and call the amortize function on them
-	        	 inputFile >> loanAmt >> annualInterestRate >> monthlyPayment;
-	        	 amortize(loanAmt,annualInterestRate,monthlyPayment,outputFile);
-	         }
-	         outputFile.close();
-	     }
-	      else
+	    	// for each set of 3 numbers (one set of amortization data), generate one schedule
+	      for(int currentLoan = 0; currentLoan < numLoans; currentLoan++)
 	      {
-	         cout << "Error: File \"" << outputFileName << "\" could not be opened" << endl;
+	        	// read in the 3 numbers and call the amortize function on them
+	        	inputFile >> loanAmt >> annualInterestRate >> monthlyPayment;
+	        	amortize(loanAmt,annualInterestRate,monthlyPayment,outputFile);
 	      }
+	      outputFile.close();
+	   }
+	   else
+	   {
+	      cout << "Error: File \"" << outputFileName << "\" could not be opened" << endl;
+	   }
 
-      inputFile.close();
+   inputFile.close();
    }
    else
    {

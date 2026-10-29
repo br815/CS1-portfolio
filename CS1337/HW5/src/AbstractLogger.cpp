@@ -42,7 +42,7 @@ AbstractLogger::~AbstractLogger()
 	Return:				None. */
 void AbstractLogger::logMessage(const char* message)
 {
-	if (loggingEnabled == true)
+	if(loggingEnabled == true)
 	{
 		displayMessage(message);
 	}
@@ -61,9 +61,9 @@ void AbstractLogger::logMessage(const char* message)
 AbstractLogger* AbstractLogger::Create(LoggerType loggerType)
 {
     // checks against the enum and creates a new object corresponding to the enum's value
-	if (loggerType == LT_FileLogger)
+	if(loggerType == LT_FileLogger)
         return new FileLogger();
-    else if (loggerType == LT_ScreenLogger)
+    else if(loggerType == LT_ScreenLogger)
         return new ScreenLogger();
 
     else return NULL;

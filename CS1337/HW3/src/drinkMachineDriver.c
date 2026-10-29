@@ -74,7 +74,7 @@ void drinkMachineDriver()
 			fflush(stdout);
 		}
 		// if the user chose to quit
-		else if (option == 0)
+		else if(option == 0)
 		{
 			continue;
 		}
@@ -139,7 +139,7 @@ void drinkMachineDriver()
 				}
 			}
 			// if the purchase was unsuccessful because of the chosen drink is not available
-			else if (purch == NOT_AVAILABLE)
+			else if(purch == NOT_AVAILABLE)
 			{
 				printf("Sorry, we are out of your drink. Please select another drink.\n");
 				fflush(stdout);

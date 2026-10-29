@@ -66,11 +66,11 @@ struct DrinkMachine* create()
 	ptrDrinkMachine->currentIndex = INVALID_INDEX;
 
 	// open the input file and check that it opened properly
-	if((filePtr = fopen (inputFileName, "r")) == NULL )
+	if((filePtr = fopen(inputFileName, "r")) == NULL )
 	{
 		// destroy the memory allocated for DrinkMachine
 		destroy(ptrDrinkMachine);
-		printf ("There has been a file error.\n");
+		printf("There has been a file error.\n");
 		fflush(stdout);
 
 		return NULL;
@@ -403,7 +403,7 @@ enum Purchase purchase(struct DrinkMachine* ptrDrinkMachine, int drinkID, double
 		}
 	}
 	// if the drink inputted is not a valid drink
-	else if (drinkAvailability == INVALID_SELECTION)
+	else if(drinkAvailability == INVALID_SELECTION)
 	{
 		return INVALID; //Purchase::INVALID;
 	}

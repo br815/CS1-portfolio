@@ -34,14 +34,15 @@ LogSingleton::LogSingleton()
 
 
 
-/*	Function Name:		getTheSingleton() (allows for a singleton design pattern)
-	Descr:				This function creates a new LogSingleton object only if none currently exist.
+/*	Function Name:		getTheSingleton()
+	Descr:				This function allows for a singleton design pattern.
+						It creates a new LogSingleton object only if none currently exist.
 	Param:    			None.
 	Return:				ptrLogSingleton
 						Pointer to a LogSingleton object. */
 LogSingleton* LogSingleton::getTheSingleton()
 {
-	if (ptrLogSingleton == nullptr)
+	if(ptrLogSingleton == nullptr)
 	{
 		ptrLogSingleton = new LogSingleton();
 	}
