@@ -12,30 +12,30 @@ using namespace std;
 
 class FreightAircraft : public Aircraft
 {
-private:
-	// string fields that are unique to this class
-	string strFreightCompany;
-	string strCargoCapacity;
+	private:
+		// string fields that are unique to this class
+		string strFreightCompany;
+		string strCargoCapacity;
 
-public:
-	// constructor
-	FreightAircraft(string strFreightCompany,
-			string strCargoCapacity,
-			int numberOfEngines = 1,
-			int seatCapacity = 2);
-	// destructor
-	virtual ~FreightAircraft();
+	public:
+		// constructor
+		FreightAircraft(string strFreightCompany,
+				string strCargoCapacity,
+				int numberOfEngines = 1,
+				int seatCapacity = 2);
+		// destructor
+		virtual ~FreightAircraft();
 
-	// override the base class's member function
-	void virtual printCharacteristics() const;
+		// override the base class's member function
+		void virtual printCharacteristics() const;
 
-	// insert member function specific to this class
+		// insert member function specific to this class
 
-	// getters and setters
-	string getStrFreightCompany() const;
-	void setStrFreightCompany(string strFreightCompany);
-	string getStrCargoCapacity() const;
-	void setStrCargoCapacity(string strCargoCapacity);
-};
+		// getters and setters
+		string getStrFreightCompany() const;
+		void setStrFreightCompany(string strFreightCompany);
+		string getStrCargoCapacity() const;
+		void setStrCargoCapacity(string strCargoCapacity);
+};	// end of subclass FreightAircraft
 
 #endif							// end of "if not defined" ifndef block

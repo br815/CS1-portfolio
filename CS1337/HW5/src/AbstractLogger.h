@@ -24,36 +24,36 @@ enum LoggerType
 
 class AbstractLogger
 {
-private:
-	// flag to enable or disable logging
-	bool loggingEnabled;
+	private:
+		// flag to enable or disable logging
+		bool loggingEnabled;
 
-public:
-	// constructor
-	AbstractLogger();
-	// destructor
-	virtual ~AbstractLogger();
+	public:
+		// constructor
+		AbstractLogger();
+		// destructor
+		virtual ~AbstractLogger();
 
-	// inline getter for loggingEnabled
-	bool getLoggingEnabled() const
-	{
-		return loggingEnabled;
-	}
+		// inline getter for loggingEnabled
+		bool getLoggingEnabled() const
+		{
+			return loggingEnabled;
+		}
 
-	// inline setter for loggingEnabled
-	void setLoggingEnabled(bool isEnabled)
-	{
-		loggingEnabled = isEnabled;
-	}
+		// inline setter for loggingEnabled
+		void setLoggingEnabled(bool isEnabled)
+		{
+			loggingEnabled = isEnabled;
+		}
 
-	// pure virtual function that is overridden and defined in each subclass
-	virtual void displayMessage(const char*) = 0;
+		// pure virtual function that is overridden and defined in each subclass
+		virtual void displayMessage(const char*) = 0;
 
-	// virtual function that is overridden in each subclass
-	virtual void logMessage(const char*);
+		// virtual function that is overridden in each subclass
+		virtual void logMessage(const char*);
 
-	// static Create function --> allows for a factory method design pattern
-	static AbstractLogger* Create(LoggerType loggerType);
-};
+		// static Create function --> allows for a factory method design pattern
+		static AbstractLogger* Create(LoggerType loggerType);
+};	// end of class AbstractLogger
 
 #endif						// end of "if not defined" ifndef block

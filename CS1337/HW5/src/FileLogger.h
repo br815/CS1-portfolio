@@ -16,24 +16,23 @@ using namespace std;
 
 class FileLogger : public AbstractLogger
 {
-private:
-	// output file stream object
-	ofstream fout;
-	// name the output file: the output file provided is Log.txt
-	const string FILENAME = "Log.txt";
+	private:
+		// output file stream object
+		ofstream fout;
+		// name the output file: the output file provided is Log.txt
+		const string FILENAME = "Log.txt";
 
-public:
-	// constructor
-	FileLogger();
-	// destructor
-	virtual ~FileLogger();
+	public:
+		// constructor
+		FileLogger();
+		// destructor
+		virtual ~FileLogger();
 
-	// override the base class's pure virtual function
-	virtual void displayMessage(const char* message);
+		// override the base class's pure virtual function
+		virtual void displayMessage(const char* message);
 
-	// overridden function from the base class
-	void logMessage(const char*);
-
-};
+		// overridden function from the base class
+		void logMessage(const char*);
+};	// end of subclass FileLogger
 
 #endif						// end of "if not defined" ifndef block

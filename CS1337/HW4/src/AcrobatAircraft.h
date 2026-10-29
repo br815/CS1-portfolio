@@ -12,31 +12,31 @@ using namespace std;
 
 class AcrobatAircraft : public Aircraft
 {
-private:
-	// string fields that are unique to this class
-	string strManufacturer;
-	string strPerformanceCapability;
+	private:
+		// string fields that are unique to this class
+		string strManufacturer;
+		string strPerformanceCapability;
 
-public:
-	// constructor
-	AcrobatAircraft(string strManufacturer,
-			string strPerformanceCapability,
-			int seatCapacity = 2,
-			int numberOfEngines = 1);
-	// destructor
-	virtual ~AcrobatAircraft();
+	public:
+		// constructor
+		AcrobatAircraft(string strManufacturer,
+				string strPerformanceCapability,
+				int seatCapacity = 2,
+				int numberOfEngines = 1);
+		// destructor
+		virtual ~AcrobatAircraft();
 
-	// override the base class's member function
-	void virtual printCharacteristics() const;
+		// override the base class's member function
+		void virtual printCharacteristics() const;
 
-	// member function specific to this class
-	void doAcrobaticManeuver();
+		// member function specific to this class
+		void doAcrobaticManeuver();
 
-	// getters and setters
-	string getStrManufacturer() const;
-	void setStrManufacturer(string strManufacturer);
-	string getStrPerformanceCapability() const;
-	void setStrPerformanceCapability(string strPerformanceCapability);
-};
+		// getters and setters
+		string getStrManufacturer() const;
+		void setStrManufacturer(string strManufacturer);
+		string getStrPerformanceCapability() const;
+		void setStrPerformanceCapability(string strPerformanceCapability);
+};	// end of subclass AcrobatAircraft
 
 #endif							// end of "if not defined" ifndef block

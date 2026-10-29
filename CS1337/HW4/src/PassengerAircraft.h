@@ -12,27 +12,27 @@ using namespace std;
 
 class PassengerAircraft : public Aircraft
 {
-private:
-	// string field that is unique to this class
-	string strRangeAndSpeed;
+	private:
+		// string field that is unique to this class
+		string strRangeAndSpeed;
 
-public:
-	// constructor
-	PassengerAircraft(string strRangeAndSpeed,
-			int seatCapacity = 2,
-			int numberOfEngines = 1);
-	// destructor
-	virtual ~PassengerAircraft();
+	public:
+		// constructor
+		PassengerAircraft(string strRangeAndSpeed,
+				int seatCapacity = 2,
+				int numberOfEngines = 1);
+		// destructor
+		virtual ~PassengerAircraft();
 
-	// override the base class's member function
-	void virtual printCharacteristics() const;
+		// override the base class's member function
+		void virtual printCharacteristics() const;
 
-	// member function specific to this class
-	void announceConnectingFlights();
+		// member function specific to this class
+		void announceConnectingFlights();
 
-	// getter and setter
-	string getStrRangeAndSpeed() const;
-	void setStrRangeAndSpeed(string strRangeAndSpeed);
-};
+		// getter and setter
+		string getStrRangeAndSpeed() const;
+		void setStrRangeAndSpeed(string strRangeAndSpeed);
+};	// end of subclass PassengerAircraft
 
 #endif							// end of "if not defined" ifndef block

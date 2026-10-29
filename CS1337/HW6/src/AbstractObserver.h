@@ -12,42 +12,42 @@ using namespace std;
 
 class AbstractObserver
 {
-private:
-	static int observerCount; // static member variable
-	int observerID;           // designation of the object's number in order of creation
-public:
-	// inline constructor
-	AbstractObserver()
-	{
-		// assigns the ID to the AbstractObserver object
-		observerID = observerCount++;
-	}
-
-	// inline destructor
-	virtual ~AbstractObserver(){}
-
-	// inline getter for observerID
-	int getObserverID() const
-	{
-		return observerID;
-	}
-
-	// overloaded == operator
-	bool operator == (const AbstractObserver & otherObserver) const
-	{
-		// uses observerID to check whether two objects are equal
-		if(this->observerID == otherObserver.observerID)
+	private:
+		static int observerCount; // static member variable
+		int observerID;           // designation of the object's number in order of creation
+	public:
+		// inline constructor
+		AbstractObserver()
 		{
-			return true;
+			// assigns the ID to the AbstractObserver object
+			observerID = observerCount++;
 		}
-		else
-		{
-			return false;
-		}
-	}
 
-	// pure virtual function
-	virtual void subjectChanged(string) = 0;
-};
+		// inline destructor
+		virtual ~AbstractObserver(){}
+
+		// inline getter for observerID
+		int getObserverID() const
+		{
+			return observerID;
+		}
+
+		// overloaded == operator
+		bool operator == (const AbstractObserver & otherObserver) const
+		{
+			// uses observerID to check whether two objects are equal
+			if(this->observerID == otherObserver.observerID)
+			{
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+		}
+
+		// pure virtual function
+		virtual void subjectChanged(string) = 0;
+};	// end of class AbstractObserver
 
 #endif							// end of "if not defined" ifndef block

@@ -13,25 +13,25 @@ using namespace std;
 
 class Subject
 {
-private:
-    string address;                         // person's physical address
-    list<AbstractObserver *> observers;     // STL list of registered Observers
-    void notify();                          // notifies Observers of changes to address
-public:
-    // constructor
-    Subject(string addr);
+    private:
+        string address;                         // person's physical address
+        list<AbstractObserver *> observers;     // STL list of registered Observers
+        void notify();                          // notifies Observers of changes to address
+    public:
+        // constructor
+        Subject(string addr);
 
-    // adds Observers to the list
-    void addObserver(AbstractObserver& observer);
+        // adds Observers to the list
+        void addObserver(AbstractObserver& observer);
 
-    // removes Observers from the list
-    void removeObserver(AbstractObserver& observer);
+        // removes Observers from the list
+        void removeObserver(AbstractObserver& observer);
 
-    // getter for address
-    string getAddress();
+        // getter for address
+        string getAddress();
 
-    // setter for address
-    void setAddress(string newAddress);
-};
+        // setter for address
+        void setAddress(string newAddress);
+};	// end of class Subject
 
 #endif                          // end of "if not defined" ifndef block

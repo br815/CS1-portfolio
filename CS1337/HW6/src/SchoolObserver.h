@@ -23,6 +23,6 @@ public:
 
 	// inline destructor
 	virtual ~SchoolObserver(){}
-};
+};	// end of subclass SchoolObserver
 
 #endif							// end of "if not defined" ifndef block

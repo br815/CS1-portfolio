@@ -15,36 +15,35 @@ using namespace std;
 
 class LogSingleton
 {
-private:
-	// constructor
-	LogSingleton();
+	private:
+		// constructor
+		LogSingleton();
 
-	// a pointer to a LogSingleton object
-	static LogSingleton* ptrLogSingleton;
+		// a pointer to a LogSingleton object
+		static LogSingleton* ptrLogSingleton;
 
-	// a counter for all LogSingleton objects
-	static int instanceCount;
+		// a counter for all LogSingleton objects
+		static int instanceCount;
 
-	// a pointer to a AbstractLogger object
-	AbstractLogger* ptrLogger;
+		// a pointer to a AbstractLogger object
+		AbstractLogger* ptrLogger;
 
 
-public:
-	// destructor
-	virtual ~LogSingleton();
+	public:
+		// destructor
+		virtual ~LogSingleton();
 
-	// static member function
-	static LogSingleton* getTheSingleton();
+		// static member function
+		static LogSingleton* getTheSingleton();
 
-	// getter for instanceCount
-	int getInstanceCount();
+		// getter for instanceCount
+		int getInstanceCount();
 
-	// inline getter for ptrLogger, returns the pointer
-	static AbstractLogger* GetLogger()
-	{
-		return LogSingleton::getTheSingleton()->ptrLogger;
-	}
-
-};
+		// inline getter for ptrLogger, returns the pointer
+		static AbstractLogger* GetLogger()
+		{
+			return LogSingleton::getTheSingleton()->ptrLogger;
+		}
+};	// end of class LogSingleton
 
 #endif						// end of "if not defined" ifndef block

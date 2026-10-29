@@ -13,16 +13,16 @@ using namespace std;
 
 class CreditObserver : public AbstractObserver
 {
-public:
-	// overridden virtual function from AbstractObserver
-	virtual void subjectChanged(string str)
-	{
-		cout << "object ID: " << getObserverID() << ". ";
-		cout << "The CreditObserver received an address change notification: <" << str << ">" << endl;
-	}
+	public:
+		// overridden virtual function from AbstractObserver
+		virtual void subjectChanged(string str)
+		{
+			cout << "object ID: " << getObserverID() << ". ";
+			cout << "The CreditObserver received an address change notification: <" << str << ">" << endl;
+		}
 
-	// inline destructor
-	virtual ~CreditObserver(){}
-};
+		// inline destructor
+		virtual ~CreditObserver(){}
+};	// end of subclass CreditObserver
 
 #endif							// end of "if not defined" ifndef block
