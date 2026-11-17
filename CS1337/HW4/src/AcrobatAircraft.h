@@ -1,7 +1,7 @@
 /*	Author:		    		Bushra Rahman
 	Course:		    		CS 1337 (Fall 2019)
 	Date:					10/31/2019
-	AcrobatAircraft.h:		This header file contains the definition for the AcrobatAircraft subclass. */
+	AcrobatAircraft.h:		This header file contains the definition for the AcrobatAircraft subclass of Aircraft. */
 
 // header for #include guard (preprocessor directives)
 #ifndef ACROBATAIRCRAFT_H_		// if ACROBATAIRCRAFT_H_ is not defined, define it (start of header guard)

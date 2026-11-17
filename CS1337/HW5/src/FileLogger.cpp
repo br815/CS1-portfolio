@@ -1,7 +1,7 @@
 /*	Author:					Bushra Rahman
 	Course:					CS 1337 (Fall 2019)
 	Date:					11/14/2019
-	FileLogger.cpp:			This source file contains the definitions for the 4 methods defined in the FileLogger subclass. */
+	FileLogger.cpp:			This source file contains the definitions for the 4 methods defined in the FileLogger subclass of AbstractLogger. */
 
 // include the header files for this subclass and its superclass
 #include "AbstractLogger.h"

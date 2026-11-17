@@ -1,7 +1,7 @@
 /*	Author:		    		Bushra Rahman
 	Course:		    		CS 1337 (Fall 2019)
 	Date:					10/31/2019
-	PassengerAircraft.h:	This header file contains the definition for the PassengerAircraft subclass. */
+	PassengerAircraft.h:	This header file contains the definition for the PassengerAircraft subclass of Aircraft. */
 
 // header for #include guard (preprocessor directives)
 #ifndef PASSENGERAIRCRAFT_H_	// if PASSENGERAIRCRAFT_H_ is not defined, define it (start of header guard)

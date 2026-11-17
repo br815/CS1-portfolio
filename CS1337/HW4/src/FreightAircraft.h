@@ -1,7 +1,7 @@
 /*	Author:		    		Bushra Rahman
 	Course:		    		CS 1337 (Fall 2019)
 	Date:					10/31/2019
-	FreightAircraft.h:		This header file contains the definition for the FreightAircraft subclass. */
+	FreightAircraft.h:		This header file contains the definition for the FreightAircraft subclass of Aircraft. */
 
 // header for #include guard (preprocessor directives)
 #ifndef FREIGHTAIRCRAFT_H_		// if FREIGHTAIRCRAFT_H_ is not defined, define it (start of header guard)

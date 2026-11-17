@@ -1,7 +1,7 @@
 /*	Author:					Bushra Rahman
 	Course:					CS 1337 (Fall 2019)
 	Date:					11/14/2019
-	ScreenLogger.cpp:		This source file contains the definitions for the 4 methods defined in the ScreenLogger subclass. */
+	ScreenLogger.cpp:		This source file contains the definitions for the 4 methods defined in the ScreenLogger subclass of AbstractLogger. */
 
 // include the header files for this subclass and its superclass
 #include "AbstractLogger.h"

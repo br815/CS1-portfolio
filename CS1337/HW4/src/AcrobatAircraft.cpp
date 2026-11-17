@@ -1,7 +1,7 @@
 /*	Author:					Bushra Rahman
 	Course:					CS 1337 (Fall 2019)
 	Date:					10/31/2019
-	AcrobatAircraft.cpp:	This source file contains the definitions for the 8 methods defined in the AcrobatAircraft subclass. */
+	AcrobatAircraft.cpp:	This source file contains the definitions for the 8 methods defined in the AcrobatAircraft subclass of Aircraft. */
 
 #include "AcrobatAircraft.h"	// header file for the subclass AcrobatAircraft
 #include <string>

@@ -1,7 +1,7 @@
 /*	Author:					Bushra Rahman
 	Course:					CS 1337 (Fall 2019)
 	Date:					10/31/2019
-	PassengerAircraft.cpp:	This source file contains the definitions for the 6 methods defined in the PassengerAircraft subclass. */
+	PassengerAircraft.cpp:	This source file contains the definitions for the 6 methods defined in the PassengerAircraft subclass of Aircraft. */
 
 #include "PassengerAircraft.h"	// header file for the subclass PassengerAircraft
 #include <string>

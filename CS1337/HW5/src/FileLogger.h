@@ -1,8 +1,7 @@
 /*	Author:					Bushra Rahman
 	Course:					CS 1337 (Fall 2019)
 	Date:					11/14/2019
-	FileLogger.h:			This header file contains the definition of the FileLogger subclass. 
-							This class is derived from the AbstractLogger class. */
+	FileLogger.h:			This header file contains the definition of the FileLogger subclass of AbstractLogger. */
 
 // header for #include guard (preprocessor directives)
 #ifndef FILELOGGER_H_		// if FILELOGGER_H_ is not defined, define it (start of header guard)

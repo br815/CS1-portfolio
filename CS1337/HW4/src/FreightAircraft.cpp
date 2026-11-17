@@ -1,7 +1,7 @@
 /*	Author:					Bushra Rahman
 	Course:					CS 1337 (Fall 2019)
 	Date:					10/31/2019
-	FreightAircraft.cpp:	This source file contains the definitions for the 7 methods defined in the FreightAircraft subclass. */
+	FreightAircraft.cpp:	This source file contains the definitions for the 7 methods defined in the FreightAircraft subclass of Aircraft. */
 
 #include "FreightAircraft.h"	// header file for the subclass FreightAircraft
 #include <string>
