@@ -6,10 +6,15 @@
 // header for #include guard (preprocessor directives)
 #ifndef FREIGHTAIRCRAFT_H_		// if FREIGHTAIRCRAFT_H_ is not defined, define it (start of header guard)
 #define FREIGHTAIRCRAFT_H_		// define FREIGHTAIRCRAFT_H_ once to prevent multiple inclusions
+
 #include "Aircraft.h"			// include the header file for the base class
+
 #include <string>
 using namespace std;
 
+
+
+// Beginning of subclass definition of FreightAircraft
 class FreightAircraft : public Aircraft
 {
 	private:

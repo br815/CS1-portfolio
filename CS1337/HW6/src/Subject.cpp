@@ -1,7 +1,7 @@
 /*	Author:			            Bushra Rahman
 	Course:			            CS 1337 (Fall 2019)
 	Date:			            12/5/2019
-	Subject.cpp:	    		This source file contains the definitions for the 6 methods defined in the Subject class. */
+	Subject.cpp:	    		This source file contains the definitions for the 6 member functions defined in the Subject class. */
 
 #include "Subject.h"			// header file for this class
 #include "AbstractObserver.h"	// header file for the AbstractObserver abstract class
@@ -9,11 +9,13 @@
 #include <iostream>
 using namespace std;
 
-/*	Function Type:		constructor
-	Descr:				This function initializes the string field in the Subject object.
-	Input:    			string addr
-						The string for a person's physical address.
-	Return:				None, initializes a Subject object. */
+
+
+/*	Function 1:		Constructor.
+	Descr:			This function initializes the string field in the Subject object.
+	Input:    		string addr
+					The string for a person's physical address.
+	Return:			None, initializes a Subject object. */
 Subject::Subject(string addr)
 {
 	address = addr;
@@ -22,11 +24,11 @@ Subject::Subject(string addr)
 
 
 
-/*	Function Name:		addObserver()
-	Descr:				This function adds Observer objects to the list.
-	Input:    			AbstractObserver &observer
-						Reference to an AbstractObserver that will be directly modified by this function.
-	Return:				None. */
+/*	Function 2:		addObserver()
+	Descr:			This function adds Observer objects to the list.
+	Input:    		AbstractObserver &observer
+					Reference to an AbstractObserver that will be directly modified by this function.
+	Return:			None. */
 void Subject::addObserver(AbstractObserver &observer)
 {
 	observers.push_back(&observer);
@@ -34,11 +36,11 @@ void Subject::addObserver(AbstractObserver &observer)
 
 
 
-/*	Function Name:		removeObserver()
-	Descr:				This function removes Observer objects from the list.
-	Input:    			AbstractObserver &observer
-						Reference to an AbstractObserver that will be directly modified by this function.
-	Return:				None. */
+/*	Function 3:		removeObserver()
+	Descr:			This function removes Observer objects from the list.
+	Input:    		AbstractObserver &observer
+					Reference to an AbstractObserver that will be directly modified by this function.
+	Return:			None. */
 void Subject::removeObserver(AbstractObserver &observer)
 {
 	// define an iterator for the list
@@ -76,11 +78,11 @@ void Subject::removeObserver(AbstractObserver &observer)
 
 
 
-/*	Function Name:		getAddress()
-	Descr:				This function is the getter for address.
-	Input:    			None.
-	Return:				string address
-						The person's directly-retrieved physical address. */
+/*	Function 4:		getAddress()
+	Descr:			This function is the getter for address.
+	Input:    		None.
+	Return:			string address
+					The person's directly-retrieved physical address. */
 string Subject::getAddress()
 {
 	return address;
@@ -88,11 +90,11 @@ string Subject::getAddress()
 
 
 
-/*	Function Name:		setAddress()
-	Descr:				This function is the setter for address.
-	Input:    			string newAddress
-						The inputted string to be set as address.
-	Return:				None. */
+/*	Function 5:		setAddress()
+	Descr:			This function is the setter for address.
+	Input:    		string newAddress
+					The inputted string to be set as address.
+	Return:			None. */
 void Subject::setAddress(string newAddress)
 {
 	address = newAddress;
@@ -102,14 +104,14 @@ void Subject::setAddress(string newAddress)
 
 
 
-/*	Function Name:		notify()
-	Descr:				This function is called in setAddress().
-						Once the new address is set, it is used in notify() as the argument of subjectChanged(),
-						which is called on every Observer in the list.
-						Thus, every Observer is notified when the subject's address changes.
-						In summary: setAddress() calls notify() and notify() calls subjectChanged().
-	Input:    			None.
-	Return:				None. */
+/*	Function 6:		notify()
+	Descr:			This function is called in setAddress().
+					Once the new address is set, it is used in notify() as the argument of subjectChanged(),
+					which is called on every Observer in the list.
+					Thus, every Observer is notified when the subject's address changes.
+					In summary: setAddress() calls notify() and notify() calls subjectChanged().
+	Input:    		None.
+	Return:			None. */
 void Subject::notify()
 {
 	// define an iterator for the list

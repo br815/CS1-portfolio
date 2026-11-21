@@ -7,9 +7,13 @@
 // header for #include guard (preprocessor directives)
 #ifndef ABSTRACTOBSERVER_H_		// if ABSTRACTOBSERVER_H_ is not defined, define it (start of header guard)
 #define ABSTRACTOBSERVER_H_		// define ABSTRACTOBSERVER_H_ once to prevent multiple inclusions
+
 #include <string>
 using namespace std;
 
+
+
+// Beginning of abstract class definition of AbstractObserver
 class AbstractObserver
 {
 	private:

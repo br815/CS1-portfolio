@@ -6,12 +6,15 @@
 // header for #include guard (preprocessor directives)
 #ifndef SCREENLOGGER_H_		// if SCREENLOGGER_H_ is not defined, define it (start of header guard)
 #define SCREENLOGGER_H_		// define SCREENLOGGER_H_ once to prevent multiple inclusions
+
 #include "AbstractLogger.h"	// include the header file for the base class
+
 #include <string>
 using namespace std;
 
 
 
+// Beginning of subclass definition of ScreenLogger
 class ScreenLogger : public AbstractLogger
 {
 	public:

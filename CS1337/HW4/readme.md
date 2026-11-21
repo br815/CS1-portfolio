@@ -23,16 +23,16 @@ build/HW4
 ## `src/` Folder
 ### Source Files
 * [Aircraft-Driver.cpp](/CS1337/HW4/src/Aircraft-Driver.cpp): program driver containing `main()` and 8 helper functions
-* [Aircraft.cpp](/CS1337/HW4/src/Aircraft.cpp): defines 10 of 11 functions for the base class
-* [AcrobatAircraft.cpp](/CS1337/HW4/src/AcrobatAircraft.cpp): defines 8 functions for a subclass
-* [FreightAircraft.cpp](/CS1337/HW4/src/FreightAircraft.cpp): defines 7 functions for a subclass
-* [PassengerAircraft.cpp](/CS1337/HW4/src/PassengerAircraft.cpp): defines 6 functions for a subclass
+* [Aircraft.cpp](/CS1337/HW4/src/Aircraft.cpp): defines 10 of 11 member functions for a base class
+* [AcrobatAircraft.cpp](/CS1337/HW4/src/AcrobatAircraft.cpp): defines 8 member functions for an Aircraft subclass
+* [FreightAircraft.cpp](/CS1337/HW4/src/FreightAircraft.cpp): defines 7 member functions for an Aircraft subclass
+* [PassengerAircraft.cpp](/CS1337/HW4/src/PassengerAircraft.cpp): defines 6 member functions for an Aircraft subclass
 
 ### Header Files
-* [Aircraft.h](/CS1337/HW4/src/Aircraft.h): contains the class definition of the base class, including 1 inline function
-* [AcrobatAircraft.h](/CS1337/HW4/src/AcrobatAircraft.h): contains the class definition of a subclass
-* [FreightAircraft.h](/CS1337/HW4/src/FreightAircraft.h): contains the class definition of a subclass
-* [PassengerAircraft.h](/CS1337/HW4/src/PassengerAircraft.h): contains the class definition of a subclass
+* [Aircraft.h](/CS1337/HW4/src/Aircraft.h): contains the class definition of the base class, including 1 inline member function
+* [AcrobatAircraft.h](/CS1337/HW4/src/AcrobatAircraft.h): contains the class definition of an Aircraft subclass
+* [FreightAircraft.h](/CS1337/HW4/src/FreightAircraft.h): contains the class definition of an Aircraft subclass
+* [PassengerAircraft.h](/CS1337/HW4/src/PassengerAircraft.h): contains the class definition of an Aircraft subclass
 
 ## Input Files
 * [aircraft.txt](/CS1337/HW4/aircraft.txt): input file choice 1 (for standard output)

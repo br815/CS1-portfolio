@@ -7,6 +7,7 @@
 // header for #include guard (preprocessor directives)
 #ifndef ABSTRACTLOGGER_H_	// if ABSTRACTLOGGER_H_ is not defined, define it (start of header guard)
 #define ABSTRACTLOGGER_H_	// define ABSTRACTLOGGER_H_ once to prevent multiple inclusions
+
 #include <iostream>
 using namespace std;
 
@@ -18,10 +19,11 @@ enum LoggerType
 {
 	// LT stands for LoggerType
     LT_FileLogger,    LT_ScreenLogger
-};
+};	// end of enum LoggerType
 
 
 
+// Beginning of abstract class definition of AbstractLogger
 class AbstractLogger
 {
 	private:

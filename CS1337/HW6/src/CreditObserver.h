@@ -6,11 +6,16 @@
 // header for #include guard (preprocessor directives)
 #ifndef CREDITOBSERVER_H_		// if CREDITOBSERVER_H_ is not defined, define it (start of header guard)
 #define CREDITOBSERVER_H_		// define CREDITOBSERVER_H_ once to prevent multiple inclusions
+
 #include "AbstractObserver.h"	// include the header file for the base class
+
 #include <string>
 #include <iostream>
 using namespace std;
 
+
+
+// Beginning of subclass definition of CreditObserver
 class CreditObserver : public AbstractObserver
 {
 	public:

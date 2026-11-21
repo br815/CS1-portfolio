@@ -1,7 +1,7 @@
 /*	Author:			Bushra Rahman
 	Course:			CS 1337 (Fall 2019)
 	Date:			10/31/2019
-	Aircraft.cpp:	This source file contains the definitions for 10 of the 11 methods defined in the Aircraft base class. */
+	Aircraft.cpp:	This source file contains the definitions for 10 of the 11 member functions defined in the Aircraft base class. */
 
 #include "Aircraft.h"	// header file for the base class Aircraft
 #include <iostream>
@@ -12,14 +12,14 @@ int Aircraft::aircraftCount = 0;	// initializes static int aircraftCount
 
 
 
-/*	Function Type:		constructor
-	Descr:				This function initializes the aircraftID, aircraftType, numberOfEngines, and seatCapacity fields.
-	Param:    			int seatCapacityR, int aircraftTypeR, int numberOfEnginesR
-						These fields are in common across all classes derived from Aircraft.
-	Return:				None, initializes an Aircraft object. */
+/*	Function 1:		Constructor.
+	Descr:			This function initializes the aircraftID, aircraftType, numberOfEngines, and seatCapacity fields.
+	Param:    		int seatCapacityR, int aircraftTypeR, int numberOfEnginesR
+					These fields are in common across all classes derived from Aircraft.
+	Return:			None, initializes an Aircraft object. */
 Aircraft::Aircraft(int seatCapacityR, int aircraftTypeR, int numberOfEnginesR)
 {
-	// calls the methods that set each field to the given arguments
+	// calls the functions that set each field to the given arguments
 	setAircraftType(aircraftTypeR);
 	setNumberOfEngines(numberOfEnginesR);
 	setSeatCapacity(seatCapacityR);
@@ -33,11 +33,11 @@ Aircraft::Aircraft(int seatCapacityR, int aircraftTypeR, int numberOfEnginesR)
 
 
 
-/*	Function Type:		destructor
-	Descr:				This function de-allocates the memory used to create the string fields in the Aircraft object.
-						NOTE: There is NO memory to de-allocate in this class.
-	Param:    			None.
-	Return:				None. */
+/*	Function 2:		Destructor.
+	Descr:			This function de-allocates the memory used to create the string fields in the Aircraft object.
+					NOTE: There is NO memory to de-allocate in this class.
+	Param:    		None.
+	Return:			None. */
 Aircraft::~Aircraft()
 {
 	// NO memory to de-allocate in this class.
@@ -45,12 +45,12 @@ Aircraft::~Aircraft()
 
 
 
-/*	Function Name:		getAircraftType()
-	Descr:				This is the getter for aircraftType.
-						This method treats the object as a const to ensure it won't be modified.
-	Param:    			None.
-	Return:				int aircraftType
-						The directly-retrieved int aircraftType. */
+/*	Function 3:		getAircraftType()
+	Descr:			This is the getter for aircraftType.
+					This function treats the object as a const to ensure it won't be modified.
+	Param:    		None.
+	Return:			int aircraftType
+					The directly-retrieved int aircraftType. */
 int Aircraft::getAircraftType() const
 {
 	return aircraftType;
@@ -58,12 +58,12 @@ int Aircraft::getAircraftType() const
 
 
 
-/*	Function Name:		getAircraftID()
-	Descr:				This is the getter for aircraftID.
-						This method treats the object as a const to ensure it won't be modified.
-	Param:    			None.
-	Return:				int aircraftID
-						The directly-retrieved int aircraftID. */
+/*	Function 4:		getAircraftID()
+	Descr:			This is the getter for aircraftID.
+					This function treats the object as a const to ensure it won't be modified.
+	Param:    		None.
+	Return:			int aircraftID
+					The directly-retrieved int aircraftID. */
 int Aircraft::getAircraftID() const
 {
 	return aircraftID;
@@ -71,12 +71,12 @@ int Aircraft::getAircraftID() const
 
 
 
-/*	Function Name:		getNumberOfEngines()
-	Descr:				This is the getter for numberOfEngines.
-						This method treats the object as a const to ensure it won't be modified.
-	Param:    			None.
-	Return:				int numberOfEngines
-						The directly-retrieved int numberOfEngines. */
+/*	Function 5:		getNumberOfEngines()
+	Descr:			This is the getter for numberOfEngines.
+					This function treats the object as a const to ensure it won't be modified.
+	Param:    		None.
+	Return:			int numberOfEngines
+					The directly-retrieved int numberOfEngines. */
 int Aircraft::getNumberOfEngines() const
 {
 	return numberOfEngines;
@@ -84,12 +84,12 @@ int Aircraft::getNumberOfEngines() const
 
 
 
-/*	Function Name:		getSeatCapacity()
-	Descr:				This is the getter for seatCapacity.
-						This method treats the object as a const to ensure it won't be modified.
-	Param:    			None.
-	Return:				int seatCapacity
-						The directly-retrieved int seatCapacity. */
+/*	Function 6:		getSeatCapacity()
+	Descr:			This is the getter for seatCapacity.
+					This function treats the object as a const to ensure it won't be modified.
+	Param:			None.
+	Return:			int seatCapacity
+					The directly-retrieved int seatCapacity. */
 int Aircraft::getSeatCapacity() const
 {
 	return seatCapacity;
@@ -97,11 +97,11 @@ int Aircraft::getSeatCapacity() const
 
 
 
-/*	Function Name:		setAircraftType()
-	Descr:				This is the setter for aircraftType.
-	Param:    			int aircraftTypeR
-						The inputted string to be set as aircraftType.
-	Return:				None. */
+/*	Function 7:		setAircraftType()
+	Descr:			This is the setter for aircraftType.
+	Param: 			int aircraftTypeR
+					The inputted string to be set as aircraftType.
+	Return:			None. */
 void Aircraft::setAircraftType(int aircraftTypeR)
 {
 	// checks that the argument aircraftTypeR is valid (between 0 and 3 inclusive)
@@ -119,11 +119,11 @@ void Aircraft::setAircraftType(int aircraftTypeR)
 
 
 
-/*	Function Name:		setNumberOfEngines()
-	Descr:				This is the setter for numberOfEngines.
-	Param:    			int numberOfEnginesR
-						The inputted string to be set as numberOfEngines.
-	Return:				None. */
+/*	Function 8:		setNumberOfEngines()
+	Descr:			This is the setter for numberOfEngines.
+	Param:    		int numberOfEnginesR
+					The inputted string to be set as numberOfEngines.
+	Return:			None. */
 void Aircraft::setNumberOfEngines(int numberOfEnginesR)
 {
 	// checks that the argument numberOfEnginesR is within a range for the number of engines usually in an aircraft
@@ -141,11 +141,11 @@ void Aircraft::setNumberOfEngines(int numberOfEnginesR)
 
 
 
-/*	Function Name:		setSeatCapacity()
-	Descr:				This is the setter for seatCapacity.
-	Param:    			int seatCapacityR
-						The inputted string to be set as seatCapacity.
-	Return:				None. */
+/*	Function 9:		setSeatCapacity()
+	Descr:			This is the setter for seatCapacity.
+	Param:    		int seatCapacityR
+					The inputted string to be set as seatCapacity.
+	Return:			None. */
 void Aircraft::setSeatCapacity(int seatCapacityR)
 {
 	// checks that the argument seatCapacityR is within a range for the number of seats usually in an aircraft
@@ -163,11 +163,11 @@ void Aircraft::setSeatCapacity(int seatCapacityR)
 
 
 
-/*	Function Name:		printCharacteristics()
-	Descr:				This is a virtual method that prints this class's fields.
-						This method treats the object as a const to ensure it won't be modified.
-	Param:    			None.
-	Return:				None. */
+/*	Function 10:	printCharacteristics()
+	Descr:			This is a virtual function that prints this class's fields.
+					This function treats the object as a const to ensure it won't be modified.
+	Param:    		None.
+	Return:			None. */
 void Aircraft::printCharacteristics() const
 {
 	cout << endl << "Aircraft ID: " << aircraftID

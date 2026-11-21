@@ -509,7 +509,7 @@ void testAircraft()
 
 
 /*	Function 8:		testAircraftClass()
-	Descr:			This function tests each Aircraft derived class by creating objects and callings their methods.
+	Descr:			This function tests each Aircraft derived class by creating objects and callings their member functions.
 	Param:    		None.
 	Return:			None. */
 void testAircraftClass()

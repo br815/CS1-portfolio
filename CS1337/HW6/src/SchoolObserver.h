@@ -6,11 +6,16 @@
 // header for #include guard (preprocessor directives)
 #ifndef SCHOOLOBSERVER_H_		// if SCHOOLOBSERVER_H_ is not defined, define it (start of header guard)
 #define SCHOOLOBSERVER_H_		// define SCHOOLOBSERVER_H_ once to prevent multiple inclusions
+
 #include "AbstractObserver.h"	// include the header file for the base class
+
 #include <string>
 #include <iostream>
 using namespace std;
 
+
+
+// Beginning of subclass definition of SchoolObserver
 class SchoolObserver : public AbstractObserver
 {
 public:

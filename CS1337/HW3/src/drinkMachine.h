@@ -7,8 +7,10 @@
 #ifndef DRINKMACHINE_H		// if DRINKMACHINE_H is not defined, define it (start of header guard)
 #define DRINKMACHINE_H		// define DRINKMACHINE_H once to prevent multiple inclusions
 
+
+
 // 2 STRUCTURE DEFINITIONS
-// definition of a DrinkItem structure
+// structure 1: definition of a DrinkItem structure
 struct DrinkItem
 {
 	// index of a drink in the list of drinks
@@ -23,7 +25,7 @@ struct DrinkItem
 	int drinksSold;
 };
 
-// definition of a DrinkMachine structure
+// structure 2: definition of a DrinkMachine structure
 struct DrinkMachine
 {
 	// a version number (for this project, it is 1)

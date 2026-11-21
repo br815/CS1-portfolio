@@ -6,8 +6,11 @@
 // header for #include guard (preprocessor directives)
 #ifndef AMORTIZE_H_		// if AMORTIZE_H_ is not defined, define it (start of header guard)
 #define AMORTIZE_H_		// define AMORTIZE_H_ once to prevent multiple inclusions
+
 #include <fstream>
 using namespace std;
+
+
 
 void amortize(double loanAmt, double annualInterestRate, double monthlyPayment, ofstream & outputFile);
 

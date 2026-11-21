@@ -8,9 +8,13 @@
 #ifndef AIRCRAFT_H_		// if AIRCRAFT_H_ is not defined, define it (start of header guard)
 #define AIRCRAFT_H_		// define AIRCRAFT_H_ once to prevent multiple inclusions
 
-// This is the base class from which 3 derived classes are to be made. It is for generic Aircraft objects.
+
+
+// Beginning of class definition of Aircraft:
 class Aircraft
 {
+	// This is the base class from which 3 derived classes are to be made. It is for generic Aircraft objects.
+	
 	private:
 		// this value holds the total number of aircrafts made. It is initialized in Aircraft.cpp
 		static int aircraftCount;
@@ -46,7 +50,7 @@ class Aircraft
 		void setNumberOfEngines(int numberOfEngines);
 		void setSeatCapacity(int seatCapacity);
 
-		// virtual method that is overridden in the each derived class
+		// virtual function that is overridden in the each derived class
 		void virtual printCharacteristics() const;
 };	// end of class Aircraft
 

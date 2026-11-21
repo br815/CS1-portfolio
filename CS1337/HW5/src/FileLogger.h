@@ -6,13 +6,16 @@
 // header for #include guard (preprocessor directives)
 #ifndef FILELOGGER_H_		// if FILELOGGER_H_ is not defined, define it (start of header guard)
 #define FILELOGGER_H_		// define FILELOGGER_H_ once to prevent multiple inclusions
+
 #include "AbstractLogger.h"	// include the header file for the base class
+
 #include <string>
 #include <fstream>
 using namespace std;
 
 
 
+// Beginning of subclass definition of FileLogger
 class FileLogger : public AbstractLogger
 {
 	private:

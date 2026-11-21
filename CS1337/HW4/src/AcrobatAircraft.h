@@ -6,10 +6,15 @@
 // header for #include guard (preprocessor directives)
 #ifndef ACROBATAIRCRAFT_H_		// if ACROBATAIRCRAFT_H_ is not defined, define it (start of header guard)
 #define ACROBATAIRCRAFT_H_		// define ACROBATAIRCRAFT_H_ once to prevent multiple inclusions
+
 #include "Aircraft.h"			// include the header file for the base class
+
 #include <string>
 using namespace std;
 
+
+
+// Beginning of subclass definition of AcrobatAircraft
 class AcrobatAircraft : public Aircraft
 {
 	private:

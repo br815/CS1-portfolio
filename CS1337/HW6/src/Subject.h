@@ -6,11 +6,16 @@
 // header for #include guard (preprocessor directives)
 #ifndef SUBJECT_H_              // if SUBJECT_H_ is not defined, define it (start of header guard)
 #define SUBJECT_H_              // define SUBJECT_H_ once to prevent multiple inclusions
+
 #include "AbstractObserver.h"   // include header file for AbstractObserver
+
 #include <string>
 #include <list>
 using namespace std;
 
+
+
+// Beginning of class definition of Subject
 class Subject
 {
     private:
@@ -32,6 +37,6 @@ class Subject
 
         // setter for address
         void setAddress(string newAddress);
-};	// end of class Subject
+};  // end of class Subject
 
 #endif                          // end of "if not defined" ifndef block

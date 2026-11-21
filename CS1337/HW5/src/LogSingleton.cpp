@@ -1,7 +1,7 @@
 /*	Author:					Bushra Rahman
 	Course:					CS 1337 (Fall 2019)
 	Date:					11/14/2019
-	LogSingleton.cpp:		This source file contains the definitions for 4 of the 5 methods defined in the LogSingleton class. */
+	LogSingleton.cpp:		This source file contains the definitions for 4 of the 5 member functions defined in the LogSingleton class. */
 
 #include "LogSingleton.h"	// header file for this class
 #include "AbstractLogger.h"	// header file for the AbstractLogger abstract class
@@ -14,13 +14,13 @@ int LogSingleton::instanceCount = 0;
 
 
 
-/*	Function Type:		constructor (allows for a singleton design pattern)
-	Descr:				This constructor calls the Create() function from the AbstractLogger class.
-						This constructor, in turn, is called in getTheSingleton(), which creates a new LogSingleton object.
-						Therefore only one ScreenLogger or FileLogger object gets created whenever a LogSingleton object is instantiated,
-						and any subsequent call to getTheSingleton() will only create a new object if none currently exist.
-	Param:    			None.
-	Return:				None, initializes a LogSingleton object. */
+/*	Function 1:		Constructor (allows for a singleton design pattern).
+	Descr:			This constructor calls the Create() function from the AbstractLogger class.
+					This constructor, in turn, is called in getTheSingleton(), which creates a new LogSingleton object.
+					Therefore only one ScreenLogger or FileLogger object gets created whenever a LogSingleton object is instantiated,
+					and any subsequent call to getTheSingleton() will only create a new object if none currently exist.
+	Param:    		None.
+	Return:			None, initializes a LogSingleton object. */
 LogSingleton::LogSingleton()
 {
 	// increments the instant count
@@ -34,12 +34,12 @@ LogSingleton::LogSingleton()
 
 
 
-/*	Function Name:		getTheSingleton()
-	Descr:				This function allows for a singleton design pattern.
-						It creates a new LogSingleton object only if none currently exist.
-	Param:    			None.
-	Return:				ptrLogSingleton
-						Pointer to a LogSingleton object. */
+/*	Function 2:		getTheSingleton()
+	Descr:			This function allows for a singleton design pattern.
+					It creates a new LogSingleton object only if none currently exist.
+	Param:    		None.
+	Return:			ptrLogSingleton
+					Pointer to a LogSingleton object. */
 LogSingleton* LogSingleton::getTheSingleton()
 {
 	if(ptrLogSingleton == nullptr)
@@ -51,11 +51,11 @@ LogSingleton* LogSingleton::getTheSingleton()
 
 
 
-/*	Function Name:		getInstanceCount()
-	Descr:				This is the getter for instanceCount, the number of instances that have been created.
-	Param:    			None.
-	Return:				int instanceCount
-						The directly-retrieved int instanceCount. */
+/*	Function 3:		getInstanceCount()
+	Descr:			This is the getter for instanceCount, the number of instances that have been created.
+	Param:    		None.
+	Return:			int instanceCount
+					The directly-retrieved int instanceCount. */
 int LogSingleton::getInstanceCount()
 {
 	return instanceCount;
@@ -63,11 +63,11 @@ int LogSingleton::getInstanceCount()
 
 
 
-/*	Function Type:		destructor
-	Descr:				This function de-allocates the memory used to create the LogSingleton object.
-						NOTE: There is NO memory to de-allocate in this class.
-	Param:    			None.
-	Return:				None. */
+/*	Function 4:		Destructor.
+	Descr:			This function de-allocates the memory used to create the LogSingleton object.
+					NOTE: There is NO memory to de-allocate in this class.
+	Param:    		None.
+	Return:			None. */
 LogSingleton::~LogSingleton()
 {
 	//

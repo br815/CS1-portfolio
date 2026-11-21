@@ -1,7 +1,7 @@
 /*	Author:					Bushra Rahman
 	Course:					CS 1337 (Fall 2019)
 	Date:					11/14/2019
-	FileLogger.cpp:			This source file contains the definitions for the 4 methods defined in the FileLogger subclass of AbstractLogger. */
+	FileLogger.cpp:			This source file contains the definitions for the 4 member functions defined in the FileLogger subclass of AbstractLogger. */
 
 // include the header files for this subclass and its superclass
 #include "AbstractLogger.h"
@@ -12,10 +12,10 @@ using namespace std;
 
 
 
-/*	Function Type:		constructor
-	Descr:				This constructor opens the output file.
-	Param:    			None.
-	Return:				None, initializes a FileLogger object. */
+/*	Function 1:		Constructor.
+	Descr:			This constructor opens the output file.
+	Param:    		None.
+	Return:			None, initializes a FileLogger object. */
 FileLogger::FileLogger() : AbstractLogger()
 {
 	fout.open(FILENAME);
@@ -27,10 +27,10 @@ FileLogger::FileLogger() : AbstractLogger()
 
 
 
-/*	Function Type:		destructor
-	Descr:				This destructor closes the output file.
-	Param:    			None.
-	Return:				None. */
+/*	Function 2:		Destructor.
+	Descr:			This destructor closes the output file.
+	Param:    		None.
+	Return:			None. */
 FileLogger::~FileLogger()
 {
 	fout.close();
@@ -38,12 +38,12 @@ FileLogger::~FileLogger()
 
 
 
-/*	Function Name:		displayMessage()
-	Descr:				This function is overridden from the base class's pure virtual function.
-						This function displays the message given as an argument in the output file.
-	Param:    			const char* message
-						Pointer to a string in memory.
-	Return:				None. */
+/*	Function 3:		displayMessage()
+	Descr:			This function is overridden from the base class's pure virtual function.
+					This function displays the message given as an argument in the output file.
+	Param:    		const char* message
+					Pointer to a string in memory.
+	Return:			None. */
 void FileLogger::displayMessage(const char* message)
 {
 	fout << message << endl;
@@ -51,11 +51,11 @@ void FileLogger::displayMessage(const char* message)
 
 
 
-/*	Function Name:		logMessage()
-	Descr:				This function only allows displayMessage() to be called if logging is enabled.
-	Param:    			const char* message
-						Pointer to a string in memory.
-	Return:				None. */
+/*	Function 4:		logMessage()
+	Descr:			This function only allows displayMessage() to be called if logging is enabled.
+	Param:    		const char* message
+					Pointer to a string in memory.
+	Return:			None. */
 void FileLogger::logMessage(const char* message)
 {
 	if(getLoggingEnabled() == true)

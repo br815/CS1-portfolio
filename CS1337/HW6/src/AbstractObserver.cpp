@@ -7,5 +7,7 @@
 #include <iostream>
 using namespace std;
 
+
+
 // initializes static int observerCount
 int AbstractObserver::observerCount = 0;

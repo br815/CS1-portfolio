@@ -6,13 +6,17 @@
 // header for #include guard (preprocessor directives)
 #ifndef LOGSINGLETON_H_		// if LOGSINGLETON_H_ is not defined, define it (start of header guard)
 #define LOGSINGLETON_H_		// define LOGSINGLETON_H_ once to prevent multiple inclusions
+
 // include the header files for all the logging classes
 #include "AbstractLogger.h"
 #include "FileLogger.h"
 #include "ScreenLogger.h"
+
 using namespace std;
 
 
+
+// Beginning of class definition of LogSingleton
 class LogSingleton
 {
 	private:

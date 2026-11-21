@@ -6,9 +6,12 @@
 // header for #include guard (preprocessor directives)
 #ifndef PROCESSARRAY_H_		// if PROCESSARRAY_H_ is not defined, define it (start of header guard)
 #define PROCESSARRAY_H_		// define PROCESSARRAY_H_ once to prevent multiple inclusions
+
 #include <fstream>
 #include <string>
 using namespace std;
+
+
 
 void runSort(int sortingChoice, int numItems, string lastNameArray[], string firstNameArray[], string birthdateArray[]);
 void runSearch(string searchingFor, int numItems, string lastNameArray[], string firstNameArray[], string birthdateArray[]);
